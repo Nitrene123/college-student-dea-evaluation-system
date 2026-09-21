@@ -1,5 +1,18 @@
 # 公开数据说明
 
+## 大学生学业效率数据（优先推荐）
+
+- 文件：`uci_higher_education_dea_sample.csv`
+- 来源：UCI Machine Learning Repository，数据集 697：Predict Students' Dropout and Academic Success
+- 原始页面：https://archive.ics.uci.edu/dataset/697/predict%2Bstudents%2Bdropout%2Band%2Bacademic%2Bsuccess
+- 原始规模：4424 名高等教育学生，包含选课、考核、通过课程数和学期平均成绩等字段
+- 当前仓库样本：180 名学生，按 Dropout、Enrolled、Graduate 三类各取 60 条，并过滤两学期均有选课且至少有一项学业产出的记录，便于网页端快速演示
+- 许可：CC BY 4.0。使用时应保留 UCI 数据集和论文引用：Realinho et al. (2021)，DOI: https://doi.org/10.24432/C5MC89
+- 建议 DMU：`学生ID`
+- 建议投入：`第一学期选课数`、`第二学期选课数`
+- 建议期望产出：`第一学期通过课程数`、`第二学期通过课程数`、`第一学期平均成绩`、`第二学期平均成绩`
+- 说明：该文件是从公开原始数据整理出的 DEA 演示样本，不代表学校正式评价结果，也不应作为个体奖惩依据。
+
 ## 中国医院效率数据
 
 - 文件：`hospital_public.csv`

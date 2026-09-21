@@ -115,6 +115,8 @@ def select_default(options: list[str], preferred: list[str]) -> list[str]:
 
 
 def data_source(source: str, uploaded) -> tuple[pd.DataFrame | None, str]:
+    if source == "公开大学生学业数据（UCI）":
+        return pd.read_csv(DATA_DIR / "uci_higher_education_dea_sample.csv"), "UCI：Predict Students' Dropout and Academic Success（180人公开样本）"
     if source == "内置学生成绩演示数据":
         return make_student_demo_data(), "内置学生成绩演示数据"
     if source == "内置效率演示数据":
@@ -131,7 +133,7 @@ def data_source(source: str, uploaded) -> tuple[pd.DataFrame | None, str]:
 with st.sidebar:
     st.markdown('<div class="side-brand"><div class="side-brand-mark">◈</div><div><div class="side-brand-title">大学生学业评估工作台</div><div class="side-brand-sub">HIGHER EDUCATION ANALYTICS</div></div></div>', unsafe_allow_html=True)
     st.markdown('<div class="side-section">数据与模型</div>', unsafe_allow_html=True)
-    source = st.radio("数据源", ["内置学生成绩演示数据", "上传学生成绩文件", "内置效率演示数据", "公开医院效率数据", "公开工业面板数据"], label_visibility="collapsed")
+    source = st.radio("数据源", ["公开大学生学业数据（UCI）", "内置学生成绩演示数据", "上传学生成绩文件", "内置效率演示数据", "公开医院效率数据", "公开工业面板数据"], label_visibility="collapsed")
     uploaded = None
     if source == "上传学生成绩文件":
         uploaded = st.file_uploader("上传 CSV / Excel / Parquet", type=["csv", "tsv", "xlsx", "xls", "parquet"])
@@ -145,7 +147,7 @@ with st.sidebar:
     mode = st.selectbox("分析模型", ["径向DEA（CCR / BCC）", "SBM效率", "超效率SBM", "Malmquist指数"], key="dea_mode")
     st.divider()
     st.markdown('<div class="side-section">评价口径</div>', unsafe_allow_html=True)
-    if source in {"内置学生成绩演示数据", "上传学生成绩文件"}:
+    if source in {"公开大学生学业数据（UCI）", "内置学生成绩演示数据", "上传学生成绩文件"}:
         st.markdown('<div class="side-note">每行 = 一名大学生或一个班级<br>投入 = 学习时间与学习资源<br>产出 = 出勤、作业、参与和课程成绩<br>结果反映相对学习效率，不等同于因果影响。</div>', unsafe_allow_html=True)
     else:
         st.markdown('<div class="side-note">每行 = 一个 DMU<br>投入 = 资源消耗，越小越好<br>产出 = 绩效结果，越大越好</div>', unsafe_allow_html=True)
@@ -165,7 +167,7 @@ if len(num_cols) < 2:
     st.stop()
 
 is_panel = mode == "Malmquist指数"
-student_mode = source in {"内置学生成绩演示数据", "上传学生成绩文件"}
+student_mode = source in {"公开大学生学业数据（UCI）", "内置学生成绩演示数据", "上传学生成绩文件"}
 default_dmu = "DMU" if "DMU" in data.columns else "DMUs" if "DMUs" in data.columns else first_text_column(data)
 if student_mode:
     for student_id_col in ["学号", "学生ID", "Student_ID"]:
@@ -184,8 +186,8 @@ with st.sidebar:
 
     available_num = [col for col in num_cols if col != dmu_col and col != period_col]
     if student_mode:
-        preferred_inputs = ["学习时长(小时/周)", "学习时长", "Study_Hours"]
-        preferred_outputs = ["出勤率(%)", "作业完成率(%)", "课堂参与度(分)", "期末成绩(分)", "课程成绩(分)", "Final_Score"]
+        preferred_inputs = ["第一学期选课数", "第二学期选课数", "学习时长(小时/周)", "学习时长", "Study_Hours"]
+        preferred_outputs = ["第一学期通过课程数", "第二学期通过课程数", "第一学期平均成绩", "第二学期平均成绩", "出勤率(%)", "作业完成率(%)", "课堂参与度(分)", "期末成绩(分)", "课程成绩(分)", "Final_Score"]
         preferred_bad = []
     elif source == "公开医院效率数据":
         preferred_inputs = ["床位数(万个)", "卫技人员数(万个)"]
@@ -251,7 +253,7 @@ system_title = "智能大学生学业成绩因素评估系统" if student_mode e
 hero_eyebrow = "HIGHER EDUCATION ANALYTICS · DEA" if student_mode else ("OPERATIONS RESEARCH · MALMQUIST PRODUCTIVITY" if is_panel else f"OPERATIONS RESEARCH · {mode.upper()}")
 hero_title = "识别学业效率，定位提升抓手" if student_mode else ("追踪跨期生产率，分解效率与技术进步" if is_panel else "识别效率前沿，定位改进标杆")
 hero_copy = "系统把学习时长等资源投入，与出勤、作业完成、课堂参与和课程成绩等期望产出进行相对效率比较，帮助教师发现需要关注的大学生和可改善的学习环节。" if student_mode else ("基于相邻时期的距离函数，计算效率变化、技术进步和Malmquist生产率指数。指数大于1表示生产率提升。" if is_panel else "将每个决策单元与效率前沿进行比较，输出相对效率、参考标杆、规模报酬、松弛变量和投入产出改进目标。")
-st.markdown(f'<div class="topline"><div class="brand"><div class="logo">◈</div><div><div class="brand-title">{system_title}</div><div class="brand-sub">HIGHER EDUCATION ANALYTICS · DEA · V1.2</div></div></div><div class="online">● SOLVER READY</div></div>', unsafe_allow_html=True)
+st.markdown(f'<div class="topline"><div class="brand"><div class="logo">◈</div><div><div class="brand-title">{system_title}</div><div class="brand-sub">HIGHER EDUCATION ANALYTICS · DEA · V1.3</div></div></div><div class="online">● SOLVER READY</div></div>', unsafe_allow_html=True)
 st.markdown(f'<div class="hero"><div class="eyebrow">{hero_eyebrow}</div><h1>{hero_title}</h1><p>{hero_copy}</p></div>', unsafe_allow_html=True)
 
 if result is None:
