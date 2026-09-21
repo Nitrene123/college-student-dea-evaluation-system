@@ -1,0 +1,836 @@
+{
+  "query": "machine learning DEA higher education student efficiency",
+  "providers_used": [
+    "openalex",
+    "semantic_scholar",
+    "crossref",
+    "arxiv"
+  ],
+  "results": [
+    {
+      "title": "Reinforcement Learning in Education: A Literature Review",
+      "authors": [
+        {
+          "name": "Bisni Fahad Mon",
+          "id": "https://openalex.org/A5034027820"
+        },
+        {
+          "name": "Asma Wasfi",
+          "id": "https://openalex.org/A5073461098"
+        },
+        {
+          "name": "Mohammad Hayajneh",
+          "id": "https://openalex.org/A5008521587"
+        },
+        {
+          "name": "Ahmad Slim",
+          "id": "https://openalex.org/A5058127892"
+        },
+        {
+          "name": "Najah Abu Ali",
+          "id": "https://openalex.org/A5110252175"
+        }
+      ],
+      "abstract": null,
+      "year": 2023,
+      "publication_date": "2023-09-17",
+      "venue": "Informatics",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "publication_type": "article",
+      "doi": "10.3390/informatics10030074",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4386837639",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.3390/informatics10030074",
+      "pdf_url": "https://www.mdpi.com/2227-9709/10/3/74/pdf?version=1695001426",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 73,
+      "reference_count": 100,
+      "fields_of_study": [
+        "Reinforcement Learning in Robotics",
+        "Online Learning and Analytics",
+        "EEG and Brain-Computer Interfaces"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Reinforcement Learning in Education: A Literature Review",
+            "doi": "https://doi.org/10.3390/informatics10030074",
+            "year": 2023,
+            "publication_date": "2023-09-17",
+            "venue": "Informatics",
+            "publisher": "Multidisciplinary Digital Publishing Institute",
+            "url": "https://doi.org/10.3390/informatics10030074",
+            "pdf_url": "https://www.mdpi.com/2227-9709/10/3/74/pdf?version=1695001426",
+            "authors": [
+              {
+                "name": "Bisni Fahad Mon",
+                "id": "https://openalex.org/A5034027820"
+              },
+              {
+                "name": "Asma Wasfi",
+                "id": "https://openalex.org/A5073461098"
+              },
+              {
+                "name": "Mohammad Hayajneh",
+                "id": "https://openalex.org/A5008521587"
+              },
+              {
+                "name": "Ahmad Slim",
+                "id": "https://openalex.org/A5058127892"
+              },
+              {
+                "name": "Najah Abu Ali",
+                "id": "https://openalex.org/A5110252175"
+              }
+            ],
+            "citation_count": 73,
+            "reference_count": 100,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2023-09-17",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.mdpi.com/2227-9709/10/3/74/pdf?version=1695001426",
+              "url_for_landing_page": "https://doi.org/10.3390/informatics10030074",
+              "url_for_pdf": "https://www.mdpi.com/2227-9709/10/3/74/pdf?version=1695001426",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+    },
+    {
+      "title": "MACHINE LEARNING AND DEA APPLICATION TO ASSESS RAILWAY EFFICIENCY: EVIDENCE FROM UZBEKISTAN",
+      "authors": [
+        {
+          "given": null,
+          "family": null
+        },
+        {
+          "given": "Komil",
+          "family": "Turaev"
+        },
+        {
+          "given": "Aleksander",
+          "family": "Sladkowski"
+        },
+        {
+          "given": null,
+          "family": null
+        }
+      ],
+      "abstract": null,
+      "year": 2025,
+      "publication_date": "2025-12-25",
+      "venue": "Economic Profile",
+      "publisher": "LLC Central University of Europe",
+      "publication_type": "journal-article",
+      "doi": "10.52244/ep.2025.30.07",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": null,
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.52244/ep.2025.30.07",
+      "pdf_url": "https://doi.org/10.52244/ep.2025.30.07",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 0,
+      "reference_count": 0,
+      "fields_of_study": [],
+      "keywords": [],
+      "sources": [
+        "crossref",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "crossref",
+          "fields": {
+            "title": "MACHINE LEARNING AND DEA APPLICATION TO ASSESS RAILWAY EFFICIENCY: EVIDENCE FROM UZBEKISTAN",
+            "doi": "10.52244/ep.2025.30.07",
+            "year": 2025,
+            "publication_date": "2025-12-25",
+            "venue": "Economic Profile",
+            "publisher": "LLC Central University of Europe",
+            "url": "https://doi.org/10.52244/ep.2025.30.07",
+            "authors": [
+              {
+                "given": null,
+                "family": null
+              },
+              {
+                "given": "Komil",
+                "family": "Turaev"
+              },
+              {
+                "given": "Aleksander",
+                "family": "Sladkowski"
+              },
+              {
+                "given": null,
+                "family": null
+              }
+            ],
+            "citation_count": 0,
+            "reference_count": 0,
+            "publication_type": "journal-article"
+          },
+          "retrieved_at": "2026-09-21T09:07:15.119383+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "other-oa",
+              "oa_date": "2025-12-25",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://doi.org/10.52244/ep.2025.30.07",
+              "url_for_landing_page": "https://doi.org/10.52244/ep.2025.30.07",
+              "url_for_pdf": "https://doi.org/10.52244/ep.2025.30.07",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:15.119383+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:15.119383+00:00"
+    },
+    {
+      "title": "Crafting personalized learning paths with AI for lifelong learning: a systematic literature review",
+      "authors": [
+        {
+          "name": "K. Bayly-Castaneda",
+          "id": "https://openalex.org/A5106362289"
+        },
+        {
+          "name": "M-S. Ramirez-Montoya",
+          "id": "https://openalex.org/A5107319704"
+        },
+        {
+          "name": "Adelina Morita-Alexander",
+          "id": "https://openalex.org/A5106362290"
+        }
+      ],
+      "abstract": null,
+      "year": 2024,
+      "publication_date": "2024-08-08",
+      "venue": "Frontiers in Education",
+      "publisher": "Frontiers Media",
+      "publication_type": "review",
+      "doi": "10.3389/feduc.2024.1424386",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4401434014",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.3389/feduc.2024.1424386",
+      "pdf_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1424386/pdf",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 149,
+      "reference_count": 42,
+      "fields_of_study": [
+        "Online Learning and Analytics",
+        "Intelligent Tutoring Systems and Adaptive Learning",
+        "Engineering Education and Technology"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Crafting personalized learning paths with AI for lifelong learning: a systematic literature review",
+            "doi": "https://doi.org/10.3389/feduc.2024.1424386",
+            "year": 2024,
+            "publication_date": "2024-08-08",
+            "venue": "Frontiers in Education",
+            "publisher": "Frontiers Media",
+            "url": "https://doi.org/10.3389/feduc.2024.1424386",
+            "pdf_url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1424386/pdf",
+            "authors": [
+              {
+                "name": "K. Bayly-Castaneda",
+                "id": "https://openalex.org/A5106362289"
+              },
+              {
+                "name": "M-S. Ramirez-Montoya",
+                "id": "https://openalex.org/A5107319704"
+              },
+              {
+                "name": "Adelina Morita-Alexander",
+                "id": "https://openalex.org/A5106362290"
+              }
+            ],
+            "citation_count": 149,
+            "reference_count": 42,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "review"
+          },
+          "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2024-08-08",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1424386/pdf",
+              "url_for_landing_page": "https://doi.org/10.3389/feduc.2024.1424386",
+              "url_for_pdf": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1424386/pdf",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+    },
+    {
+      "title": "Impact of AI Based Learning on Student Performance Prediction in Higher Education Using Machine Learning",
+      "authors": [
+        {
+          "given": "Prathamesh",
+          "family": "Deepak Salke"
+        },
+        {
+          "given": "Ayesha",
+          "family": "Siddique"
+        }
+      ],
+      "abstract": null,
+      "year": 2026,
+      "publication_date": "2026-5-16",
+      "venue": "International Journal of Scientific Engineering and Research",
+      "publisher": "International Journal of Scientific Engineering and Research",
+      "publication_type": "journal-article",
+      "doi": "10.70729/se26508202008",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": null,
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.70729/se26508202008",
+      "pdf_url": "https://www.ijser.in/archives/v14i5/SE26508202008.pdf",
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "citation_count": 0,
+      "reference_count": 0,
+      "fields_of_study": [],
+      "keywords": [],
+      "sources": [
+        "crossref",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "crossref",
+          "fields": {
+            "title": "Impact of AI Based Learning on Student Performance Prediction in Higher Education Using Machine Learning",
+            "doi": "10.70729/se26508202008",
+            "year": 2026,
+            "publication_date": "2026-5-16",
+            "venue": "International Journal of Scientific Engineering and Research",
+            "publisher": "International Journal of Scientific Engineering and Research",
+            "url": "https://doi.org/10.70729/se26508202008",
+            "authors": [
+              {
+                "given": "Prathamesh",
+                "family": "Deepak Salke"
+              },
+              {
+                "given": "Ayesha",
+                "family": "Siddique"
+              }
+            ],
+            "citation_count": 0,
+            "reference_count": 0,
+            "publication_type": "journal-article"
+          },
+          "retrieved_at": "2026-09-21T09:07:15.119383+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2026-05-16",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.ijser.in/archives/v14i5/SE26508202008.pdf",
+              "url_for_landing_page": "https://doi.org/10.70729/se26508202008",
+              "url_for_pdf": "https://www.ijser.in/archives/v14i5/SE26508202008.pdf",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:15.119383+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:15.119383+00:00"
+    },
+    {
+      "title": "A Review of Water Quality Forecasting and Classification Using Machine Learning Models and Statistical Analysis",
+      "authors": [
+        {
+          "name": "Amar Lokman",
+          "id": "https://openalex.org/A5050168988"
+        },
+        {
+          "name": "Wan Zakiah Wan Ismail",
+          "id": "https://openalex.org/A5018765606"
+        },
+        {
+          "name": "Nor Azlina Ab. Aziz",
+          "id": "https://openalex.org/A5008927441"
+        }
+      ],
+      "abstract": null,
+      "year": 2025,
+      "publication_date": "2025-07-28",
+      "venue": "Water",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "publication_type": "article",
+      "doi": "10.3390/w17152243",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4412694843",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.3390/w17152243",
+      "pdf_url": "https://www.mdpi.com/2073-4441/17/15/2243/pdf?version=1753696906",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 72,
+      "reference_count": 154,
+      "fields_of_study": [
+        "Hydrological Forecasting Using AI",
+        "Water Quality Monitoring Technologies",
+        "Artificial Intelligence in Healthcare"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "A Review of Water Quality Forecasting and Classification Using Machine Learning Models and Statistical Analysis",
+            "doi": "https://doi.org/10.3390/w17152243",
+            "year": 2025,
+            "publication_date": "2025-07-28",
+            "venue": "Water",
+            "publisher": "Multidisciplinary Digital Publishing Institute",
+            "url": "https://doi.org/10.3390/w17152243",
+            "pdf_url": "https://www.mdpi.com/2073-4441/17/15/2243/pdf?version=1753696906",
+            "authors": [
+              {
+                "name": "Amar Lokman",
+                "id": "https://openalex.org/A5050168988"
+              },
+              {
+                "name": "Wan Zakiah Wan Ismail",
+                "id": "https://openalex.org/A5018765606"
+              },
+              {
+                "name": "Nor Azlina Ab. Aziz",
+                "id": "https://openalex.org/A5008927441"
+              }
+            ],
+            "citation_count": 72,
+            "reference_count": 154,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2025-07-28",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.mdpi.com/2073-4441/17/15/2243/pdf?version=1753696906",
+              "url_for_landing_page": "https://doi.org/10.3390/w17152243",
+              "url_for_pdf": "https://www.mdpi.com/2073-4441/17/15/2243/pdf?version=1753696906",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+    },
+    {
+      "title": "Chatbots and Flipped Learning: Enhancing Student Engagement and Learning Outcomes through Personalised Support and Collaboration",
+      "authors": [
+        {
+          "name": "FX. Risang Baskara",
+          "id": "https://openalex.org/A5044427392"
+        }
+      ],
+      "abstract": null,
+      "year": 2023,
+      "publication_date": "2023-03-30",
+      "venue": "IJORER International Journal of Recent Educational Research",
+      "publisher": null,
+      "publication_type": "article",
+      "doi": "10.46245/ijorer.v4i2.331",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4361241770",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.46245/ijorer.v4i2.331",
+      "pdf_url": "https://journal.ia-education.com/index.php/ijorer/article/download/331/301",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 66,
+      "reference_count": 70,
+      "fields_of_study": [
+        "AI in Service Interactions",
+        "Innovative Teaching Methods",
+        "E-Learning and Knowledge Management"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Chatbots and Flipped Learning: Enhancing Student Engagement and Learning Outcomes through Personalised Support and Collaboration",
+            "doi": "https://doi.org/10.46245/ijorer.v4i2.331",
+            "year": 2023,
+            "publication_date": "2023-03-30",
+            "venue": "IJORER International Journal of Recent Educational Research",
+            "publisher": null,
+            "url": "https://doi.org/10.46245/ijorer.v4i2.331",
+            "pdf_url": "https://journal.ia-education.com/index.php/ijorer/article/download/331/301",
+            "authors": [
+              {
+                "name": "FX. Risang Baskara",
+                "id": "https://openalex.org/A5044427392"
+              }
+            ],
+            "citation_count": 66,
+            "reference_count": 70,
+            "is_open_access": true,
+            "oa_status": "diamond",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by-sa",
+              "oa_date": "2023-03-30",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://journal.ia-education.com/index.php/ijorer/article/download/331/301",
+              "url_for_landing_page": "https://doi.org/10.46245/ijorer.v4i2.331",
+              "url_for_pdf": "https://journal.ia-education.com/index.php/ijorer/article/download/331/301",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+    },
+    {
+      "title": "Predictive Modeling of Student Performance in Higher Education using Machine Learning Algorithms",
+      "authors": [
+        {
+          "given": "Arnav",
+          "family": "Mahes"
+        },
+        {
+          "given": "Diya",
+          "family": "Harwalkar"
+        }
+      ],
+      "abstract": null,
+      "year": null,
+      "publication_date": "None",
+      "venue": null,
+      "publisher": "Elsevier BV",
+      "publication_type": "posted-content",
+      "doi": "10.2139/ssrn.6746338",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": null,
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.2139/ssrn.6746338",
+      "pdf_url": "https://doi.org/10.2139/ssrn.6746338",
+      "is_open_access": true,
+      "oa_status": "green",
+      "citation_count": 0,
+      "reference_count": 0,
+      "fields_of_study": [],
+      "keywords": [],
+      "sources": [
+        "crossref",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "crossref",
+          "fields": {
+            "title": "Predictive Modeling of Student Performance in Higher Education using Machine Learning Algorithms",
+            "doi": "10.2139/ssrn.6746338",
+            "year": null,
+            "publication_date": "None",
+            "venue": null,
+            "publisher": "Elsevier BV",
+            "url": "https://doi.org/10.2139/ssrn.6746338",
+            "authors": [
+              {
+                "given": "Arnav",
+                "family": "Mahes"
+              },
+              {
+                "given": "Diya",
+                "family": "Harwalkar"
+              }
+            ],
+            "citation_count": 0,
+            "reference_count": 0,
+            "publication_type": "posted-content"
+          },
+          "retrieved_at": "2026-09-21T09:07:15.119383+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "repository",
+              "is_best": true,
+              "license": null,
+              "oa_date": "2026-01-01",
+              "pmh_id": null,
+              "repository_institution": "RELX Group (Netherlands)",
+              "updated": "deprecated",
+              "url": "https://doi.org/10.2139/ssrn.6746338",
+              "url_for_landing_page": "https://doi.org/10.2139/ssrn.6746338",
+              "url_for_pdf": null,
+              "version": "acceptedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:15.119383+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:15.119383+00:00"
+    },
+    {
+      "title": "APPLICATION OF DEA IN BENCHMARKING: A SYSTEMATIC LITERATURE REVIEW FROM 2003–2020",
+      "authors": [
+        {
+          "name": "Reza Rostamzadeh",
+          "id": "https://openalex.org/A5039647229"
+        },
+        {
+          "name": "Omid Akbarian",
+          "id": "https://openalex.org/A5049694646"
+        },
+        {
+          "name": "Audrius Banaitis",
+          "id": "https://openalex.org/A5029616809"
+        },
+        {
+          "name": "Zeynab Soltani",
+          "id": "https://openalex.org/A5049373331"
+        }
+      ],
+      "abstract": null,
+      "year": 2021,
+      "publication_date": "2021-01-04",
+      "venue": "Technological and Economic Development of Economy",
+      "publisher": "Vilnius Gediminas Technical University",
+      "publication_type": "review",
+      "doi": "10.3846/tede.2021.13406",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W3119801917",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.3846/tede.2021.13406",
+      "pdf_url": "https://journals.vgtu.lt/index.php/TEDE/article/download/13406/10258",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 75,
+      "reference_count": 100,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Life Cycle Costing Analysis",
+        "Quality and Supply Management"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "APPLICATION OF DEA IN BENCHMARKING: A SYSTEMATIC LITERATURE REVIEW FROM 2003–2020",
+            "doi": "https://doi.org/10.3846/tede.2021.13406",
+            "year": 2021,
+            "publication_date": "2021-01-04",
+            "venue": "Technological and Economic Development of Economy",
+            "publisher": "Vilnius Gediminas Technical University",
+            "url": "https://doi.org/10.3846/tede.2021.13406",
+            "pdf_url": "https://journals.vgtu.lt/index.php/TEDE/article/download/13406/10258",
+            "authors": [
+              {
+                "name": "Reza Rostamzadeh",
+                "id": "https://openalex.org/A5039647229"
+              },
+              {
+                "name": "Omid Akbarian",
+                "id": "https://openalex.org/A5049694646"
+              },
+              {
+                "name": "Audrius Banaitis",
+                "id": "https://openalex.org/A5029616809"
+              },
+              {
+                "name": "Zeynab Soltani",
+                "id": "https://openalex.org/A5049373331"
+              }
+            ],
+            "citation_count": 75,
+            "reference_count": 100,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "review"
+          },
+          "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2021-01-04",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://journals.vgtu.lt/index.php/TEDE/article/download/13406/10258",
+              "url_for_landing_page": "https://doi.org/10.3846/tede.2021.13406",
+              "url_for_pdf": "https://journals.vgtu.lt/index.php/TEDE/article/download/13406/10258",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:14.293702+00:00"
+    }
+  ],
+  "failed_providers": [
+    "arxiv: HTTP Error 406: Not Acceptable",
+    "semantic_scholar: HTTP Error 429: "
+  ],
+  "warnings": [],
+  "retrieved_at": "2026-09-21T09:07:37.101974+00:00"
+}

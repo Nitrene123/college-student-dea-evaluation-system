@@ -3,13 +3,17 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import streamlit as st
 
 from dea_engine import (
     audit_dea_result,
+    bootstrap_network_sbm,
     evaluate_dea,
+    evaluate_group_meta_frontier,
     evaluate_malmquist,
+    evaluate_network_sbm,
     evaluate_sbm,
     load_table,
     make_demo_data,
@@ -143,8 +147,8 @@ with st.sidebar:
         if source == "公开工业面板数据":
             st.session_state["dea_mode"] = "Malmquist指数"
         elif previous_source == "公开工业面板数据":
-            st.session_state["dea_mode"] = "径向DEA（CCR / BCC）"
-    mode = st.selectbox("分析模型", ["径向DEA（CCR / BCC）", "SBM效率", "超效率SBM", "Malmquist指数"], key="dea_mode")
+            st.session_state["dea_mode"] = "学习过程网络DEA"
+    mode = st.selectbox("分析模型", ["学习过程网络DEA", "稳健网络DEA（Bootstrap）", "径向DEA（CCR / BCC）", "SBM效率", "超效率SBM", "Malmquist指数"], key="dea_mode")
     st.divider()
     st.markdown('<div class="side-section">评价口径</div>', unsafe_allow_html=True)
     if source in {"公开大学生学业数据（UCI）", "内置学生成绩演示数据", "上传学生成绩文件"}:
@@ -167,6 +171,8 @@ if len(num_cols) < 2:
     st.stop()
 
 is_panel = mode == "Malmquist指数"
+network_mode = mode in {"学习过程网络DEA", "稳健网络DEA（Bootstrap）"}
+robust_network_mode = mode == "稳健网络DEA（Bootstrap）"
 student_mode = source in {"公开大学生学业数据（UCI）", "内置学生成绩演示数据", "上传学生成绩文件"}
 default_dmu = "DMU" if "DMU" in data.columns else "DMUs" if "DMUs" in data.columns else first_text_column(data)
 if student_mode:
@@ -187,32 +193,51 @@ with st.sidebar:
     available_num = [col for col in num_cols if col != dmu_col and col != period_col]
     if student_mode:
         preferred_inputs = ["第一学期选课数", "第二学期选课数", "学习时长(小时/周)", "学习时长", "Study_Hours"]
+        preferred_intermediate = ["第一学期考核次数", "第二学期考核次数", "出勤率(%)", "作业完成率(%)", "课堂参与度(分)"]
         preferred_outputs = ["第一学期通过课程数", "第二学期通过课程数", "第一学期平均成绩", "第二学期平均成绩", "出勤率(%)", "作业完成率(%)", "课堂参与度(分)", "期末成绩(分)", "课程成绩(分)", "Final_Score"]
         preferred_bad = []
     elif source == "公开医院效率数据":
         preferred_inputs = ["床位数(万个)", "卫技人员数(万个)"]
+        preferred_intermediate = []
         preferred_outputs = ["诊疗人次数(万人次)", "入院人数(万人)"]
         preferred_bad = ["医疗废弃物(万套)"]
     elif source == "公开工业面板数据":
         preferred_inputs = ["Capital", "Labor"]
+        preferred_intermediate = []
         preferred_outputs = ["GIOV"]
         preferred_bad = []
     else:
         preferred_inputs = ["人员投入", "资金投入"]
+        preferred_intermediate = []
         preferred_outputs = ["服务产出", "经济产出"]
         preferred_bad = []
     input_label = "学习资源投入（越小越好）" if student_mode else "投入指标（越小越好）"
     output_label = "学习结果与成绩（越大越好）" if student_mode else "期望产出（越大越好）"
     input_cols = st.multiselect(input_label, available_num, default=select_default(available_num, preferred_inputs))
     remaining_num = [col for col in available_num if col not in input_cols]
-    output_cols = st.multiselect(output_label, remaining_num + input_cols, default=select_default(remaining_num + input_cols, preferred_outputs))
+    intermediate_cols: list[str] = []
+    if network_mode:
+        intermediate_cols = st.multiselect("学习过程指标（中间产出）", remaining_num, default=select_default(remaining_num, preferred_intermediate))
+        output_options = [col for col in remaining_num if col not in intermediate_cols]
+        output_cols = st.multiselect("最终学业产出（越大越好）", output_options, default=select_default(output_options, preferred_outputs))
+        st.caption("两阶段口径：学习资源投入 → 学习过程 → 最终成绩。请勿把同一字段同时放入两个阶段。")
+    else:
+        output_cols = st.multiselect(output_label, remaining_num + input_cols, default=select_default(remaining_num + input_cols, preferred_outputs))
+
+    group_col = None
+    if network_mode:
+        group_candidates = [col for col in data.columns if col != dmu_col and not pd.api.types.is_numeric_dtype(data[col])]
+        group_options = ["不启用群体元前沿"] + group_candidates
+        group_col = st.selectbox("群体异质性分析（可选）", group_options, help="建议选择专业、年级或课程负荷分组；不要选择成绩结果标签作为分组字段。")
+        if group_col == "不启用群体元前沿":
+            group_col = None
 
     undesirable_cols: list[str] = []
     if mode in {"SBM效率", "超效率SBM"}:
         bad_options = [col for col in available_num if col not in input_cols and col not in output_cols] + input_cols
         undesirable_cols = st.multiselect("非期望产出（越小越好，可选）", bad_options, default=[col for col in preferred_bad if col in bad_options])
 
-    if mode in {"径向DEA（CCR / BCC）", "SBM效率", "超效率SBM"}:
+    if mode in {"学习过程网络DEA", "稳健网络DEA（Bootstrap）", "径向DEA（CCR / BCC）", "SBM效率", "超效率SBM"}:
         model_label = st.selectbox("规模报酬", ["BCC / VRS（可变规模）", "CCR / CRS（固定规模）"])
         model_code = "BCC" if model_label.startswith("BCC") else "CCR"
     else:
@@ -221,8 +246,42 @@ with st.sidebar:
     orientation_label = None
     if mode == "径向DEA（CCR / BCC）":
         orientation_label = st.selectbox("优化方向", ["投入导向", "产出导向"])
+    bootstrap_replications = 0
+    if robust_network_mode:
+        bootstrap_replications = st.slider("Bootstrap重复次数", min_value=10, max_value=120, value=30, step=10, help="论文实验建议使用100或以上；网页演示默认30以保证响应速度。")
 
-if mode == "径向DEA（CCR / BCC）":
+group_result = None
+group_error = None
+if mode == "学习过程网络DEA":
+    try:
+        result = evaluate_network_sbm(data, dmu_col, input_cols, intermediate_cols, output_cols, model_code)
+        if group_col:
+            try:
+                group_result = evaluate_group_meta_frontier(data, dmu_col, group_col, input_cols, intermediate_cols, output_cols, model_code)
+            except Exception as exc:
+                group_error = str(exc)
+        network_table = result["table"]
+        audit = {"passed": bool(np.all((network_table["网络SBM效率"] >= -1e-7) & (network_table["网络SBM效率"] <= 1.0 + 1e-6))), "checks": {"网络效率在0到1之间": bool(np.all((network_table["网络SBM效率"] >= -1e-7) & (network_table["网络SBM效率"] <= 1.0 + 1e-6))), "阶段效率在0到1之间": bool(np.all((network_table[["阶段1效率", "阶段2效率"]].to_numpy() >= -1e-7) & (network_table[["阶段1效率", "阶段2效率"]].to_numpy() <= 1.0 + 1e-6))), "DMU数量与结果数量一致": len(network_table) == len(data)}}
+    except Exception as exc:
+        result = None
+        audit = None
+        error_message = str(exc)
+elif mode == "稳健网络DEA（Bootstrap）":
+    try:
+        with st.spinner(f"正在运行两阶段网络DEA与Bootstrap（{bootstrap_replications}次重采样）…"):
+            result = bootstrap_network_sbm(data, dmu_col, input_cols, intermediate_cols, output_cols, model_code, bootstrap_replications, 42)
+        if group_col:
+            try:
+                group_result = evaluate_group_meta_frontier(data, dmu_col, group_col, input_cols, intermediate_cols, output_cols, model_code)
+            except Exception as exc:
+                group_error = str(exc)
+        network_table = result["table"]
+        audit = {"passed": bool(np.all((network_table["网络SBM效率"] >= -1e-7) & (network_table["网络SBM效率"] <= 1.0 + 1e-6))), "checks": {"网络效率在0到1之间": bool(np.all((network_table["网络SBM效率"] >= -1e-7) & (network_table["网络SBM效率"] <= 1.0 + 1e-6))), "Bootstrap区间有效": bool(np.all(network_table["Bootstrap下限95%"] <= network_table["Bootstrap上限95%"] + 1e-9)), "DMU数量与结果数量一致": len(network_table) == len(data)}}
+    except Exception as exc:
+        result = None
+        audit = None
+        error_message = str(exc)
+elif mode == "径向DEA（CCR / BCC）":
     try:
         result = evaluate_dea(data, dmu_col, input_cols, output_cols, model_code, "input" if orientation_label == "投入导向" else "output")
         audit = audit_dea_result(data, dmu_col, input_cols, output_cols, model_code, "input" if orientation_label == "投入导向" else "output")
@@ -250,10 +309,10 @@ else:
         error_message = str(exc)
 
 system_title = "智能大学生学业成绩因素评估系统" if student_mode else "智能DEA效率评价系统"
-hero_eyebrow = "HIGHER EDUCATION ANALYTICS · DEA" if student_mode else ("OPERATIONS RESEARCH · MALMQUIST PRODUCTIVITY" if is_panel else f"OPERATIONS RESEARCH · {mode.upper()}")
-hero_title = "识别学业效率，定位提升抓手" if student_mode else ("追踪跨期生产率，分解效率与技术进步" if is_panel else "识别效率前沿，定位改进标杆")
-hero_copy = "系统把学习时长等资源投入，与出勤、作业完成、课堂参与和课程成绩等期望产出进行相对效率比较，帮助教师发现需要关注的大学生和可改善的学习环节。" if student_mode else ("基于相邻时期的距离函数，计算效率变化、技术进步和Malmquist生产率指数。指数大于1表示生产率提升。" if is_panel else "将每个决策单元与效率前沿进行比较，输出相对效率、参考标杆、规模报酬、松弛变量和投入产出改进目标。")
-st.markdown(f'<div class="topline"><div class="brand"><div class="logo">◈</div><div><div class="brand-title">{system_title}</div><div class="brand-sub">HIGHER EDUCATION ANALYTICS · DEA · V1.3</div></div></div><div class="online">● SOLVER READY</div></div>', unsafe_allow_html=True)
+hero_eyebrow = "HIGHER EDUCATION ANALYTICS · NETWORK DEA" if network_mode and student_mode else ("HIGHER EDUCATION ANALYTICS · DEA" if student_mode else ("OPERATIONS RESEARCH · MALMQUIST PRODUCTIVITY" if is_panel else f"OPERATIONS RESEARCH · {mode.upper()}"))
+hero_title = "拆解学习过程，定位效率瓶颈" if network_mode and student_mode else ("识别学业效率，定位提升抓手" if student_mode else ("追踪跨期生产率，分解效率与技术进步" if is_panel else "识别效率前沿，定位改进标杆"))
+hero_copy = "系统将学习投入、学习参与过程和最终学业结果串联起来，输出阶段效率、网络效率、瓶颈环节、群体差异与稳健性区间，支持教师制定可执行的改进目标。" if network_mode and student_mode else ("系统把学习时长等资源投入，与出勤、作业完成、课堂参与和课程成绩等期望产出进行相对效率比较，帮助教师发现需要关注的大学生和可改善的学习环节。" if student_mode else ("基于相邻时期的距离函数，计算效率变化、技术进步和Malmquist生产率指数。指数大于1表示生产率提升。" if is_panel else "将每个决策单元与效率前沿进行比较，输出相对效率、参考标杆、规模报酬、松弛变量和投入产出改进目标。"))
+    st.markdown(f'<div class="topline"><div class="brand"><div class="logo">◈</div><div><div class="brand-title">{system_title}</div><div class="brand-sub">HIGHER EDUCATION ANALYTICS · DEA · V1.4</div></div></div><div class="online">● SOLVER READY</div></div>', unsafe_allow_html=True)
 st.markdown(f'<div class="hero"><div class="eyebrow">{hero_eyebrow}</div><h1>{hero_title}</h1><p>{hero_copy}</p></div>', unsafe_allow_html=True)
 
 if result is None:
@@ -277,6 +336,15 @@ if is_panel:
         ("平均EC", f"{table['效率变化EC'].mean():.3f}", "技术效率变化"),
         ("平均TC", f"{table['技术进步TC'].mean():.3f}", "技术进步变化"),
     ]
+elif network_mode:
+    score_col = "网络SBM效率"
+    kpi_values = [
+        ("大学生 / 决策单元" if student_mode else "决策单元", f"{summary['dmu_count']:,}", "学生数量" if student_mode else "DMU数量"),
+        ("稳健高效单元" if robust_network_mode else "网络高效单元", f"{summary['efficient_count']:,}", "网络效率接近1"),
+        ("平均网络效率", f"{summary['average_efficiency']:.3f}", "阶段效率几何平均"),
+        ("阶段1平均", f"{summary['average_stage1']:.3f}", "投入 → 学习过程"),
+        ("阶段2平均", f"{summary['average_stage2']:.3f}", "学习过程 → 成绩"),
+    ]
 else:
     score_col = "DEA效率" if mode == "径向DEA（CCR / BCC）" else "SBM效率"
     kpi_values = [
@@ -287,7 +355,8 @@ else:
         ("成绩产出" if student_mode else "产出指标", f"{len(output_cols)}", "结果维度" if student_mode else "绩效结果维度"),
     ]
 
-st.markdown(f'<div class="section-title">{("学生学习效率概览" if student_mode else "生产率资产概览" if is_panel else "效率资产概览")} <span class="section-note">{data_label}</span></div>', unsafe_allow_html=True)
+overview_title = "网络学习效率概览" if network_mode and student_mode else ("学生学习效率概览" if student_mode else "生产率资产概览" if is_panel else "效率资产概览")
+st.markdown(f'<div class="section-title">{overview_title} <span class="section-note">{data_label}</span></div>', unsafe_allow_html=True)
 columns = st.columns(5)
 for col, values in zip(columns, kpi_values):
     with col:
@@ -301,6 +370,30 @@ with tab_overview:
         chart = table.set_index("DMU")[["Malmquist指数"]]
         st.bar_chart(chart, color="#38d5ff", height=280)
         st.dataframe(table, use_container_width=True, hide_index=True)
+    elif network_mode:
+        score_value = float(table["网络SBM效率"].mean())
+        ring_score = min(max(score_value, 0), 1) * 100
+        left, right = st.columns([1, 2.25])
+        with left:
+            explanation = "阶段1与阶段2效率的几何平均；最低阶段会被标记为学习瓶颈。"
+            if robust_network_mode:
+                explanation += f" Bootstrap平均区间宽度为 {summary['average_ci_width']:.3f}。"
+            st.markdown(f'<div class="panel"><div class="score-ring" style="--score:{ring_score:.2f}%"><div class="score-number">{score_value:.3f}</div></div><div class="score-caption">平均网络效率</div><div class="formula"><b>论文口径</b><br>{explanation}</div></div>', unsafe_allow_html=True)
+        with right:
+            display = table.copy()
+            format_cols = [col for col in ["网络SBM效率", "阶段1效率", "阶段2效率", "阶段差值", "Bootstrap均值", "Bootstrap下限95%", "Bootstrap上限95%", "偏差修正效率"] if col in display.columns]
+            for col in format_cols:
+                display[col] = display[col].map(lambda value: f"{value:.4f}" if pd.notna(value) else "—")
+            st.dataframe(display, use_container_width=True, hide_index=True, height=340)
+        st.markdown('<div class="section-title">阶段效率分布</div>', unsafe_allow_html=True)
+        st.bar_chart(table.set_index("DMU")[["阶段1效率", "阶段2效率"]], height=250)
+        if robust_network_mode:
+            st.info(f"Bootstrap重复次数：{summary['bootstrap_replications']}；平均排名相关系数：{summary['mean_rank_correlation']:.3f}。区间越窄、排名相关系数越接近1，结果越稳定。")
+        if group_result is not None:
+            st.markdown('<div class="section-title">群体元前沿比较</div>', unsafe_allow_html=True)
+            st.dataframe(group_result["group_table"], use_container_width=True, hide_index=True)
+        elif group_error:
+            st.warning(f"群体元前沿未运行：{group_error}")
     else:
         score_col = "DEA效率" if mode == "径向DEA（CCR / BCC）" else "SBM效率"
         score_value = float(table[score_col].mean())
@@ -329,6 +422,39 @@ with tab_detail:
         selected = table[table["DMU"] == selected_dmu]
         st.dataframe(selected, use_container_width=True, hide_index=True)
         st.markdown('<div class="formula"><b>分解关系</b><br>Malmquist指数 = √[(跨期距离函数组合)]；结果同时展示效率变化（EC）与技术进步（TC），两者乘积构成生产率变化。</div>', unsafe_allow_html=True)
+    elif network_mode:
+        detail_names = table["DMU"].tolist()
+        selected_dmu = st.selectbox("选择需要诊断的学生 / DMU", detail_names)
+        detail = result["details"][selected_dmu]
+        score_value = float(table.loc[table["DMU"] == selected_dmu, "网络SBM效率"].iloc[0])
+        row = table.loc[table["DMU"] == selected_dmu].iloc[0]
+        d1, d2, d3 = st.columns(3)
+        with d1:
+            st.markdown(kpi_card("网络效率", f"{score_value:.4f}", "网络前沿" if score_value >= 0.99999 else "存在阶段改进空间"), unsafe_allow_html=True)
+        with d2:
+            st.markdown(kpi_card("阶段瓶颈", str(row["瓶颈阶段"]), f"阶段1 {row['阶段1效率']:.3f} · 阶段2 {row['阶段2效率']:.3f}"), unsafe_allow_html=True)
+        with d3:
+            suggestion_count = sum(len(detail.get(key, {})) for key in ["阶段1投入冗余", "阶段1过程不足", "阶段2过程冗余", "阶段2产出不足"])
+            robust_hint = str(row["稳健性标签"]) if "稳健性标签" in row else "未运行Bootstrap"
+            st.markdown(kpi_card("诊断项数", f"{suggestion_count}", robust_hint), unsafe_allow_html=True)
+        left, right = st.columns(2)
+        with left:
+            st.markdown("**阶段1参考标杆**")
+            st.dataframe(pd.DataFrame(detail.get("阶段1标杆", [])) if detail.get("阶段1标杆") else pd.DataFrame([{"DMU": "—", "权重": 0}]), use_container_width=True, hide_index=True)
+            st.markdown("**阶段2参考标杆**")
+            st.dataframe(pd.DataFrame(detail.get("阶段2标杆", [])) if detail.get("阶段2标杆") else pd.DataFrame([{"DMU": "—", "权重": 0}]), use_container_width=True, hide_index=True)
+        with right:
+            st.markdown("**阶段化改进诊断**")
+            rows = []
+            for key, title in [("阶段1投入冗余", "阶段1投入冗余"), ("阶段1过程不足", "阶段1过程不足"), ("阶段2过程冗余", "阶段2过程冗余"), ("阶段2产出不足", "阶段2产出不足")]:
+                for name, value in detail.get(key, {}).items():
+                    rows.append({"指标": name, "诊断": title, "建议量": value})
+            st.dataframe(pd.DataFrame(rows) if rows else pd.DataFrame([{"指标": "—", "诊断": "两个阶段均接近效率前沿", "建议量": 0}]), use_container_width=True, hide_index=True)
+        if group_result is not None:
+            group_row = group_result["table"].loc[group_result["table"]["DMU"] == selected_dmu]
+            if not group_row.empty:
+                st.markdown("**群体前沿对照**")
+                st.dataframe(group_row, use_container_width=True, hide_index=True)
     else:
         detail_names = table["DMU"].tolist()
         selected_dmu = st.selectbox("选择需要诊断的决策单元", detail_names)

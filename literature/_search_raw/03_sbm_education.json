@@ -1,0 +1,852 @@
+{
+  "query": "SBM DEA education efficiency students",
+  "providers_used": [
+    "openalex",
+    "semantic_scholar",
+    "crossref",
+    "arxiv"
+  ],
+  "results": [
+    {
+      "title": "Research on Regional Differences and Influencing Factors of Chinese Industrial Green Technology Innovation Efficiency Based on Dagum Gini Coefficient Decomposition",
+      "authors": [
+        {
+          "name": "Liyuan Zhang",
+          "id": "https://openalex.org/A5100361504"
+        },
+        {
+          "name": "Xiang Ma",
+          "id": "https://openalex.org/A5045366662"
+        },
+        {
+          "name": "Young-Seok Ock",
+          "id": "https://openalex.org/A5051410546"
+        },
+        {
+          "name": "Lingli Qing",
+          "id": "https://openalex.org/A5085951839"
+        }
+      ],
+      "abstract": null,
+      "year": 2022,
+      "publication_date": "2022-01-12",
+      "venue": "Land",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "publication_type": "article",
+      "doi": "10.3390/land11010122",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4225752870",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.3390/land11010122",
+      "pdf_url": "https://www.mdpi.com/2073-445X/11/1/122/pdf?version=1641987172",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 128,
+      "reference_count": 35,
+      "fields_of_study": [
+        "Energy, Environment, Economic Growth",
+        "Environmental Sustainability in Business",
+        "Environmental Impact and Sustainability"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Research on Regional Differences and Influencing Factors of Chinese Industrial Green Technology Innovation Efficiency Based on Dagum Gini Coefficient Decomposition",
+            "doi": "https://doi.org/10.3390/land11010122",
+            "year": 2022,
+            "publication_date": "2022-01-12",
+            "venue": "Land",
+            "publisher": "Multidisciplinary Digital Publishing Institute",
+            "url": "https://doi.org/10.3390/land11010122",
+            "pdf_url": "https://www.mdpi.com/2073-445X/11/1/122/pdf?version=1641987172",
+            "authors": [
+              {
+                "name": "Liyuan Zhang",
+                "id": "https://openalex.org/A5100361504"
+              },
+              {
+                "name": "Xiang Ma",
+                "id": "https://openalex.org/A5045366662"
+              },
+              {
+                "name": "Young-Seok Ock",
+                "id": "https://openalex.org/A5051410546"
+              },
+              {
+                "name": "Lingli Qing",
+                "id": "https://openalex.org/A5085951839"
+              }
+            ],
+            "citation_count": 128,
+            "reference_count": 35,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2022-01-12",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.mdpi.com/2073-445X/11/1/122/pdf?version=1641987172",
+              "url_for_landing_page": "https://doi.org/10.3390/land11010122",
+              "url_for_pdf": "https://www.mdpi.com/2073-445X/11/1/122/pdf?version=1641987172",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+    },
+    {
+      "title": "Towards Carbon Neutrality: The Impact of Renewable Energy Development on Carbon Emission Efficiency",
+      "authors": [
+        {
+          "name": "Feng Dong",
+          "id": "https://openalex.org/A5063199844"
+        },
+        {
+          "name": "Chang Qin",
+          "id": "https://openalex.org/A5041571627"
+        },
+        {
+          "name": "Xiaoyun Zhang",
+          "id": "https://openalex.org/A5107956593"
+        },
+        {
+          "name": "Xu Zhao",
+          "id": "https://openalex.org/A5006765310"
+        },
+        {
+          "name": "Yuling Pan",
+          "id": "https://openalex.org/A5035433895"
+        },
+        {
+          "name": "Yujin Gao",
+          "id": "https://openalex.org/A5109919305"
+        },
+        {
+          "name": "Jiao Zhu",
+          "id": "https://openalex.org/A5041823860"
+        },
+        {
+          "name": "Yangfan Li",
+          "id": "https://openalex.org/A5101594115"
+        }
+      ],
+      "abstract": null,
+      "year": 2021,
+      "publication_date": "2021-12-16",
+      "venue": "International Journal of Environmental Research and Public Health",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "publication_type": "article",
+      "doi": "10.3390/ijerph182413284",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4200450975",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.3390/ijerph182413284",
+      "pdf_url": "https://www.mdpi.com/1660-4601/18/24/13284/pdf?version=1639964145",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 93,
+      "reference_count": 82,
+      "fields_of_study": [
+        "Energy, Environment, Economic Growth",
+        "Environmental Impact and Sustainability",
+        "Efficiency Analysis Using DEA"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Towards Carbon Neutrality: The Impact of Renewable Energy Development on Carbon Emission Efficiency",
+            "doi": "https://doi.org/10.3390/ijerph182413284",
+            "year": 2021,
+            "publication_date": "2021-12-16",
+            "venue": "International Journal of Environmental Research and Public Health",
+            "publisher": "Multidisciplinary Digital Publishing Institute",
+            "url": "https://doi.org/10.3390/ijerph182413284",
+            "pdf_url": "https://www.mdpi.com/1660-4601/18/24/13284/pdf?version=1639964145",
+            "authors": [
+              {
+                "name": "Feng Dong",
+                "id": "https://openalex.org/A5063199844"
+              },
+              {
+                "name": "Chang Qin",
+                "id": "https://openalex.org/A5041571627"
+              },
+              {
+                "name": "Xiaoyun Zhang",
+                "id": "https://openalex.org/A5107956593"
+              },
+              {
+                "name": "Xu Zhao",
+                "id": "https://openalex.org/A5006765310"
+              },
+              {
+                "name": "Yuling Pan",
+                "id": "https://openalex.org/A5035433895"
+              },
+              {
+                "name": "Yujin Gao",
+                "id": "https://openalex.org/A5109919305"
+              },
+              {
+                "name": "Jiao Zhu",
+                "id": "https://openalex.org/A5041823860"
+              },
+              {
+                "name": "Yangfan Li",
+                "id": "https://openalex.org/A5101594115"
+              }
+            ],
+            "citation_count": 93,
+            "reference_count": 82,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2021-12-16",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.mdpi.com/1660-4601/18/24/13284/pdf?version=1639964145",
+              "url_for_landing_page": "https://doi.org/10.3390/ijerph182413284",
+              "url_for_pdf": "https://www.mdpi.com/1660-4601/18/24/13284/pdf?version=1639964145",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+    },
+    {
+      "title": "Energy efficiency evaluation model based on DEA-SBM-Malmquist index",
+      "authors": [
+        {
+          "given": "Zile",
+          "family": "Zheng"
+        }
+      ],
+      "abstract": null,
+      "year": 2021,
+      "publication_date": "2021-11",
+      "venue": "Energy Reports",
+      "publisher": "Elsevier BV",
+      "publication_type": "journal-article",
+      "doi": "10.1016/j.egyr.2021.10.020",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": null,
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1016/j.egyr.2021.10.020",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2352484721010362/pdf",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 71,
+      "reference_count": 35,
+      "fields_of_study": [],
+      "keywords": [],
+      "sources": [
+        "crossref",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "crossref",
+          "fields": {
+            "title": "Energy efficiency evaluation model based on DEA-SBM-Malmquist index",
+            "doi": "10.1016/j.egyr.2021.10.020",
+            "year": 2021,
+            "publication_date": "2021-11",
+            "venue": "Energy Reports",
+            "publisher": "Elsevier BV",
+            "url": "https://doi.org/10.1016/j.egyr.2021.10.020",
+            "authors": [
+              {
+                "given": "Zile",
+                "family": "Zheng"
+              }
+            ],
+            "citation_count": 71,
+            "reference_count": 35,
+            "publication_type": "journal-article"
+          },
+          "retrieved_at": "2026-09-21T09:06:33.125565+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by-nc-nd",
+              "oa_date": "2021-11-01",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.sciencedirect.com/science/article/pii/S2352484721010362/pdf",
+              "url_for_landing_page": "https://doi.org/10.1016/j.egyr.2021.10.020",
+              "url_for_pdf": "https://www.sciencedirect.com/science/article/pii/S2352484721010362/pdf",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:06:33.125565+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:06:33.125565+00:00"
+    },
+    {
+      "title": "Assessing airport efficiency in the Sakha Republic: A DEA-SBM analysis",
+      "authors": [
+        {
+          "name": "Young-Seo Choi",
+          "id": "https://openalex.org/A5051760941"
+        },
+        {
+          "name": "Maria Listan Bernal",
+          "id": "https://openalex.org/A5093743040"
+        },
+        {
+          "name": "Stanislav Tsymzhitov",
+          "id": "https://openalex.org/A5094050729"
+        },
+        {
+          "name": "Gi‐Tae Yeo",
+          "id": "https://openalex.org/A5019030747"
+        }
+      ],
+      "abstract": null,
+      "year": 2024,
+      "publication_date": "2024-03-01",
+      "venue": "The Asian Journal of Shipping and Logistics",
+      "publisher": "Elsevier BV",
+      "publication_type": "article",
+      "doi": "10.1016/j.ajsl.2024.02.002",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4392383909",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1016/j.ajsl.2024.02.002",
+      "pdf_url": "https://doi.org/10.1016/j.ajsl.2024.02.002",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 10,
+      "reference_count": 9,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Aviation Industry Analysis and Trends",
+        "Transport and Economic Policies"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Assessing airport efficiency in the Sakha Republic: A DEA-SBM analysis",
+            "doi": "https://doi.org/10.1016/j.ajsl.2024.02.002",
+            "year": 2024,
+            "publication_date": "2024-03-01",
+            "venue": "The Asian Journal of Shipping and Logistics",
+            "publisher": "Elsevier BV",
+            "url": "https://doi.org/10.1016/j.ajsl.2024.02.002",
+            "pdf_url": null,
+            "authors": [
+              {
+                "name": "Young-Seo Choi",
+                "id": "https://openalex.org/A5051760941"
+              },
+              {
+                "name": "Maria Listan Bernal",
+                "id": "https://openalex.org/A5093743040"
+              },
+              {
+                "name": "Stanislav Tsymzhitov",
+                "id": "https://openalex.org/A5094050729"
+              },
+              {
+                "name": "Gi‐Tae Yeo",
+                "id": "https://openalex.org/A5019030747"
+              }
+            ],
+            "citation_count": 10,
+            "reference_count": 9,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by-nc-nd",
+              "oa_date": "2024-03-01",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://doi.org/10.1016/j.ajsl.2024.02.002",
+              "url_for_landing_page": "https://doi.org/10.1016/j.ajsl.2024.02.002",
+              "url_for_pdf": null,
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+    },
+    {
+      "title": "APPLICATION OF DEA IN BENCHMARKING: A SYSTEMATIC LITERATURE REVIEW FROM 2003–2020",
+      "authors": [
+        {
+          "name": "Reza Rostamzadeh",
+          "id": "https://openalex.org/A5039647229"
+        },
+        {
+          "name": "Omid Akbarian",
+          "id": "https://openalex.org/A5049694646"
+        },
+        {
+          "name": "Audrius Banaitis",
+          "id": "https://openalex.org/A5029616809"
+        },
+        {
+          "name": "Zeynab Soltani",
+          "id": "https://openalex.org/A5049373331"
+        }
+      ],
+      "abstract": null,
+      "year": 2021,
+      "publication_date": "2021-01-04",
+      "venue": "Technological and Economic Development of Economy",
+      "publisher": "Vilnius Gediminas Technical University",
+      "publication_type": "review",
+      "doi": "10.3846/tede.2021.13406",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W3119801917",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.3846/tede.2021.13406",
+      "pdf_url": "https://journals.vgtu.lt/index.php/TEDE/article/download/13406/10258",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 75,
+      "reference_count": 100,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Life Cycle Costing Analysis",
+        "Quality and Supply Management"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "APPLICATION OF DEA IN BENCHMARKING: A SYSTEMATIC LITERATURE REVIEW FROM 2003–2020",
+            "doi": "https://doi.org/10.3846/tede.2021.13406",
+            "year": 2021,
+            "publication_date": "2021-01-04",
+            "venue": "Technological and Economic Development of Economy",
+            "publisher": "Vilnius Gediminas Technical University",
+            "url": "https://doi.org/10.3846/tede.2021.13406",
+            "pdf_url": "https://journals.vgtu.lt/index.php/TEDE/article/download/13406/10258",
+            "authors": [
+              {
+                "name": "Reza Rostamzadeh",
+                "id": "https://openalex.org/A5039647229"
+              },
+              {
+                "name": "Omid Akbarian",
+                "id": "https://openalex.org/A5049694646"
+              },
+              {
+                "name": "Audrius Banaitis",
+                "id": "https://openalex.org/A5029616809"
+              },
+              {
+                "name": "Zeynab Soltani",
+                "id": "https://openalex.org/A5049373331"
+              }
+            ],
+            "citation_count": 75,
+            "reference_count": 100,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "review"
+          },
+          "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2021-01-04",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://journals.vgtu.lt/index.php/TEDE/article/download/13406/10258",
+              "url_for_landing_page": "https://doi.org/10.3846/tede.2021.13406",
+              "url_for_pdf": "https://journals.vgtu.lt/index.php/TEDE/article/download/13406/10258",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+    },
+    {
+      "title": "Network DEA and Its Applications (2017–2022): A Systematic Literature Review",
+      "authors": [
+        {
+          "name": "Светлана Ратнер",
+          "id": "https://openalex.org/A5004670894"
+        },
+        {
+          "name": "Artem Mikhailovich Shaposhnikov",
+          "id": "https://openalex.org/A5016788728"
+        },
+        {
+          "name": "Andrey V. Lychev",
+          "id": "https://openalex.org/A5014936976"
+        }
+      ],
+      "abstract": null,
+      "year": 2023,
+      "publication_date": "2023-05-03",
+      "venue": "Mathematics",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "publication_type": "review",
+      "doi": "10.3390/math11092141",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4382005031",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.3390/math11092141",
+      "pdf_url": "https://www.mdpi.com/2227-7390/11/9/2141/pdf?version=1683103302",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 47,
+      "reference_count": 120,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Energy Efficiency and Management",
+        "Sustainable Supply Chain Management"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Network DEA and Its Applications (2017–2022): A Systematic Literature Review",
+            "doi": "https://doi.org/10.3390/math11092141",
+            "year": 2023,
+            "publication_date": "2023-05-03",
+            "venue": "Mathematics",
+            "publisher": "Multidisciplinary Digital Publishing Institute",
+            "url": "https://doi.org/10.3390/math11092141",
+            "pdf_url": "https://www.mdpi.com/2227-7390/11/9/2141/pdf?version=1683103302",
+            "authors": [
+              {
+                "name": "Светлана Ратнер",
+                "id": "https://openalex.org/A5004670894"
+              },
+              {
+                "name": "Artem Mikhailovich Shaposhnikov",
+                "id": "https://openalex.org/A5016788728"
+              },
+              {
+                "name": "Andrey V. Lychev",
+                "id": "https://openalex.org/A5014936976"
+              }
+            ],
+            "citation_count": 47,
+            "reference_count": 120,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "review"
+          },
+          "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2023-05-03",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.mdpi.com/2227-7390/11/9/2141/pdf?version=1683103302",
+              "url_for_landing_page": "https://doi.org/10.3390/math11092141",
+              "url_for_pdf": "https://www.mdpi.com/2227-7390/11/9/2141/pdf?version=1683103302",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+    },
+    {
+      "title": "Using network DEA to inform policy: The case of the teaching quality of higher education in England",
+      "authors": [
+        {
+          "name": "Boon L. Lee",
+          "id": "https://openalex.org/A5006814587"
+        },
+        {
+          "name": "Jill Johnes",
+          "id": "https://openalex.org/A5046138054"
+        }
+      ],
+      "abstract": null,
+      "year": 2021,
+      "publication_date": "2021-02-09",
+      "venue": "Higher Education Quarterly",
+      "publisher": "Wiley",
+      "publication_type": "article",
+      "doi": "10.1111/hequ.12307",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W3124462671",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1111/hequ.12307",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/hequ.12307",
+      "is_open_access": true,
+      "oa_status": "bronze",
+      "citation_count": 40,
+      "reference_count": 64,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Education and Public Policy"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Using network DEA to inform policy: The case of the teaching quality of higher education in England",
+            "doi": "https://doi.org/10.1111/hequ.12307",
+            "year": 2021,
+            "publication_date": "2021-02-09",
+            "venue": "Higher Education Quarterly",
+            "publisher": "Wiley",
+            "url": "https://doi.org/10.1111/hequ.12307",
+            "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/hequ.12307",
+            "authors": [
+              {
+                "name": "Boon L. Lee",
+                "id": "https://openalex.org/A5006814587"
+              },
+              {
+                "name": "Jill Johnes",
+                "id": "https://openalex.org/A5046138054"
+              }
+            ],
+            "citation_count": 40,
+            "reference_count": 64,
+            "is_open_access": true,
+            "oa_status": "bronze",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": null,
+              "oa_date": "2021-02-09",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/hequ.12307",
+              "url_for_landing_page": "https://doi.org/10.1111/hequ.12307",
+              "url_for_pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/hequ.12307",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:06:31.663119+00:00"
+    },
+    {
+      "title": "Evaluation of Operational Efficiency of Xinjiang Airport Group Based on SBM-DEA Model",
+      "authors": [
+        {
+          "given": "松卫",
+          "family": "俞"
+        }
+      ],
+      "abstract": null,
+      "year": 2025,
+      "publication_date": "2025",
+      "venue": "Statistics and Application",
+      "publisher": "Hans Publishers",
+      "publication_type": "journal-article",
+      "doi": "10.12677/sa.2025.143065",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": null,
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.12677/sa.2025.143065",
+      "pdf_url": null,
+      "is_open_access": false,
+      "oa_status": "closed",
+      "citation_count": 0,
+      "reference_count": 9,
+      "fields_of_study": [],
+      "keywords": [],
+      "sources": [
+        "crossref",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "crossref",
+          "fields": {
+            "title": "Evaluation of Operational Efficiency of Xinjiang Airport Group Based on SBM-DEA Model",
+            "doi": "10.12677/sa.2025.143065",
+            "year": 2025,
+            "publication_date": "2025",
+            "venue": "Statistics and Application",
+            "publisher": "Hans Publishers",
+            "url": "https://doi.org/10.12677/sa.2025.143065",
+            "authors": [
+              {
+                "given": "松卫",
+                "family": "俞"
+              }
+            ],
+            "citation_count": 0,
+            "reference_count": 9,
+            "publication_type": "journal-article"
+          },
+          "retrieved_at": "2026-09-21T09:06:33.125565+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {},
+            "is_oa": false
+          },
+          "retrieved_at": "2026-09-21T09:06:33.125565+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:06:33.125565+00:00"
+    }
+  ],
+  "failed_providers": [
+    "arxiv: HTTP Error 406: Not Acceptable",
+    "semantic_scholar: HTTP Error 429: "
+  ],
+  "warnings": [],
+  "retrieved_at": "2026-09-21T09:06:58.193401+00:00"
+}

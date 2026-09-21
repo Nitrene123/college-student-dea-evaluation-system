@@ -1,0 +1,13 @@
+{
+  "dataset_rows": 180,
+  "network_efficient_count": 1,
+  "average_network_efficiency": 0.088424,
+  "average_stage1_efficiency": 0.212835,
+  "average_stage2_efficiency": 0.390412,
+  "bootstrap_replications_smoke": 10,
+  "average_bootstrap_ci_width": 0.041069,
+  "mean_bootstrap_rank_correlation": 0.972869,
+  "group_count_smoke": 3,
+  "valid_group_count_smoke": 3,
+  "streamlit_health_status": 200
+}

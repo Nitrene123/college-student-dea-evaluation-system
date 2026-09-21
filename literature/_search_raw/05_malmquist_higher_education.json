@@ -1,0 +1,883 @@
+{
+  "query": "Malmquist DEA higher education university efficiency",
+  "providers_used": [
+    "openalex",
+    "semantic_scholar",
+    "crossref",
+    "arxiv"
+  ],
+  "results": [
+    {
+      "title": "Valuation of the Allocation Efficiency of Higher Education Investment Resources",
+      "authors": [
+        {
+          "given": "Qi",
+          "family": "Mo"
+        },
+        {
+          "given": "Wen",
+          "family": "Liu"
+        }
+      ],
+      "abstract": null,
+      "year": 2025,
+      "publication_date": "2025-11-21",
+      "venue": "Proceedings of the 2025 4th International Conference on Artificial Intelligence and Education",
+      "publisher": "ACM",
+      "publication_type": "proceedings-article",
+      "doi": "10.1145/3797552.3797801",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": null,
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1145/3797552.3797801",
+      "pdf_url": "https://doi.org/10.1145/3797552.3797801",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 0,
+      "reference_count": 9,
+      "fields_of_study": [],
+      "keywords": [],
+      "sources": [
+        "crossref",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "crossref",
+          "fields": {
+            "title": "Valuation of the Allocation Efficiency of Higher Education Investment Resources",
+            "doi": "10.1145/3797552.3797801",
+            "year": 2025,
+            "publication_date": "2025-11-21",
+            "venue": "Proceedings of the 2025 4th International Conference on Artificial Intelligence and Education",
+            "publisher": "ACM",
+            "url": "https://doi.org/10.1145/3797552.3797801",
+            "authors": [
+              {
+                "given": "Qi",
+                "family": "Mo"
+              },
+              {
+                "given": "Wen",
+                "family": "Liu"
+              }
+            ],
+            "citation_count": 0,
+            "reference_count": 9,
+            "publication_type": "proceedings-article"
+          },
+          "retrieved_at": "2026-09-21T09:07:53.100209+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": null,
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2025-11-21",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://doi.org/10.1145/3797552.3797801",
+              "url_for_landing_page": "https://doi.org/10.1145/3797552.3797801",
+              "url_for_pdf": null,
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:53.100209+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:53.100209+00:00"
+    },
+    {
+      "title": "The governance-production nexus of eco-efficiency in Chinese resource-based cities: A two-stage network DEA approach",
+      "authors": [
+        {
+          "name": "Huijuan Xiao",
+          "id": "https://openalex.org/A5067662687"
+        },
+        {
+          "name": "Daoping Wang",
+          "id": "https://openalex.org/A5026817382"
+        },
+        {
+          "name": "Yu Qi",
+          "id": "https://openalex.org/A5101820137"
+        },
+        {
+          "name": "Shuai Shao",
+          "id": "https://openalex.org/A5000043923"
+        },
+        {
+          "name": "Ya Zhou",
+          "id": "https://openalex.org/A5005597844"
+        },
+        {
+          "name": "Yuli Shan",
+          "id": "https://openalex.org/A5064788948"
+        }
+      ],
+      "abstract": null,
+      "year": 2021,
+      "publication_date": "2021-06-25",
+      "venue": "Energy Economics",
+      "publisher": "Elsevier BV",
+      "publication_type": "article",
+      "doi": "10.1016/j.eneco.2021.105408",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W3176642220",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1016/j.eneco.2021.105408",
+      "pdf_url": "https://research.rug.nl/en/publications/a9d9a795-b4cb-49a1-a14d-353eb29530c0",
+      "is_open_access": true,
+      "oa_status": "green",
+      "citation_count": 110,
+      "reference_count": 122,
+      "fields_of_study": [
+        "Energy, Environment, Economic Growth",
+        "Environmental Impact and Sustainability",
+        "Efficiency Analysis Using DEA"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "The governance-production nexus of eco-efficiency in Chinese resource-based cities: A two-stage network DEA approach",
+            "doi": "https://doi.org/10.1016/j.eneco.2021.105408",
+            "year": 2021,
+            "publication_date": "2021-06-25",
+            "venue": "Energy Economics",
+            "publisher": "Elsevier BV",
+            "url": "https://doi.org/10.1016/j.eneco.2021.105408",
+            "pdf_url": null,
+            "authors": [
+              {
+                "name": "Huijuan Xiao",
+                "id": "https://openalex.org/A5067662687"
+              },
+              {
+                "name": "Daoping Wang",
+                "id": "https://openalex.org/A5026817382"
+              },
+              {
+                "name": "Yu Qi",
+                "id": "https://openalex.org/A5101820137"
+              },
+              {
+                "name": "Shuai Shao",
+                "id": "https://openalex.org/A5000043923"
+              },
+              {
+                "name": "Ya Zhou",
+                "id": "https://openalex.org/A5005597844"
+              },
+              {
+                "name": "Yuli Shan",
+                "id": "https://openalex.org/A5064788948"
+              }
+            ],
+            "citation_count": 110,
+            "reference_count": 122,
+            "is_open_access": true,
+            "oa_status": "green",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": "3ba687452a47e90aa9f",
+              "evidence": "deprecated",
+              "host_type": "repository",
+              "is_best": true,
+              "license": "other-oa",
+              "oa_date": "2021-06-25",
+              "pmh_id": "oai:pure.rug.nl:openaire/a9d9a795-b4cb-49a1-a14d-353eb29530c0",
+              "repository_institution": "University of Groningen",
+              "updated": "deprecated",
+              "url": "https://research.rug.nl/en/publications/a9d9a795-b4cb-49a1-a14d-353eb29530c0",
+              "url_for_landing_page": "https://research.rug.nl/en/publications/a9d9a795-b4cb-49a1-a14d-353eb29530c0",
+              "url_for_pdf": null,
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+    },
+    {
+      "title": "Evaluation of Water Resources Utilization Efficiency in Guangdong Province Based on the DEA–Malmquist Model",
+      "authors": [
+        {
+          "name": "Lifen Cheng",
+          "id": "https://openalex.org/A5100521885"
+        },
+        {
+          "name": "Song Song",
+          "id": "https://openalex.org/A5100738004"
+        },
+        {
+          "name": "Yufeng Xie",
+          "id": "https://openalex.org/A5110850947"
+        }
+      ],
+      "abstract": null,
+      "year": 2022,
+      "publication_date": "2022-02-25",
+      "venue": "Frontiers in Environmental Science",
+      "publisher": "Frontiers Media",
+      "publication_type": "article",
+      "doi": "10.3389/fenvs.2022.819693",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4214775570",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.3389/fenvs.2022.819693",
+      "pdf_url": "https://doi.org/10.3389/fenvs.2022.819693",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 26,
+      "reference_count": 38,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Water resources management and optimization",
+        "Economic and Environmental Valuation"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Evaluation of Water Resources Utilization Efficiency in Guangdong Province Based on the DEA–Malmquist Model",
+            "doi": "https://doi.org/10.3389/fenvs.2022.819693",
+            "year": 2022,
+            "publication_date": "2022-02-25",
+            "venue": "Frontiers in Environmental Science",
+            "publisher": "Frontiers Media",
+            "url": "https://doi.org/10.3389/fenvs.2022.819693",
+            "pdf_url": null,
+            "authors": [
+              {
+                "name": "Lifen Cheng",
+                "id": "https://openalex.org/A5100521885"
+              },
+              {
+                "name": "Song Song",
+                "id": "https://openalex.org/A5100738004"
+              },
+              {
+                "name": "Yufeng Xie",
+                "id": "https://openalex.org/A5110850947"
+              }
+            ],
+            "citation_count": 26,
+            "reference_count": 38,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2022-02-25",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://doi.org/10.3389/fenvs.2022.819693",
+              "url_for_landing_page": "https://doi.org/10.3389/fenvs.2022.819693",
+              "url_for_pdf": null,
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+    },
+    {
+      "title": "Health system efficiency in OECD countries: dynamic network DEA approach",
+      "authors": [
+        {
+          "name": "Beáta Gavurová",
+          "id": "https://openalex.org/A5069109142"
+        },
+        {
+          "name": "Kristína Kočišová",
+          "id": "https://openalex.org/A5015504924"
+        },
+        {
+          "name": "Jakub Sopko",
+          "id": "https://openalex.org/A5076619693"
+        }
+      ],
+      "abstract": null,
+      "year": 2021,
+      "publication_date": "2021-10-12",
+      "venue": "Health Economics Review",
+      "publisher": "BioMed Central",
+      "publication_type": "article",
+      "doi": "10.1186/s13561-021-00337-9",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W3204999748",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1186/s13561-021-00337-9",
+      "pdf_url": "https://healtheconomicsreview.biomedcentral.com/track/pdf/10.1186/s13561-021-00337-9",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 101,
+      "reference_count": 79,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Global Health Care Issues",
+        "Business and Economic Development"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Health system efficiency in OECD countries: dynamic network DEA approach",
+            "doi": "https://doi.org/10.1186/s13561-021-00337-9",
+            "year": 2021,
+            "publication_date": "2021-10-12",
+            "venue": "Health Economics Review",
+            "publisher": "BioMed Central",
+            "url": "https://doi.org/10.1186/s13561-021-00337-9",
+            "pdf_url": "https://healtheconomicsreview.biomedcentral.com/track/pdf/10.1186/s13561-021-00337-9",
+            "authors": [
+              {
+                "name": "Beáta Gavurová",
+                "id": "https://openalex.org/A5069109142"
+              },
+              {
+                "name": "Kristína Kočišová",
+                "id": "https://openalex.org/A5015504924"
+              },
+              {
+                "name": "Jakub Sopko",
+                "id": "https://openalex.org/A5076619693"
+              }
+            ],
+            "citation_count": 101,
+            "reference_count": 79,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2021-10-12",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://healtheconomicsreview.biomedcentral.com/track/pdf/10.1186/s13561-021-00337-9",
+              "url_for_landing_page": "https://doi.org/10.1186/s13561-021-00337-9",
+              "url_for_pdf": "https://healtheconomicsreview.biomedcentral.com/track/pdf/10.1186/s13561-021-00337-9",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+    },
+    {
+      "title": "Efficiency and quality in Colombian education: An application of the metafrontier Malmquist-Luenberger productivity index",
+      "authors": [
+        {
+          "name": "Alexei Arbona",
+          "id": "https://openalex.org/A5008609895"
+        },
+        {
+          "name": "Víctor Giménez",
+          "id": "https://openalex.org/A5011189342"
+        },
+        {
+          "name": "Sebastián López-Estrada",
+          "id": "https://openalex.org/A5083834695"
+        },
+        {
+          "name": "Diego Prior",
+          "id": "https://openalex.org/A5056938440"
+        }
+      ],
+      "abstract": null,
+      "year": 2021,
+      "publication_date": "2021-07-07",
+      "venue": "Socio-Economic Planning Sciences",
+      "publisher": "Elsevier BV",
+      "publication_type": "article",
+      "doi": "10.1016/j.seps.2021.101122",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W3182045464",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1016/j.seps.2021.101122",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0038012121001142/pdf",
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "citation_count": 31,
+      "reference_count": 68,
+      "fields_of_study": [
+        "Business, Education, Mathematics Research",
+        "School Choice and Performance",
+        "Public Policy and Governance"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Efficiency and quality in Colombian education: An application of the metafrontier Malmquist-Luenberger productivity index",
+            "doi": "https://doi.org/10.1016/j.seps.2021.101122",
+            "year": 2021,
+            "publication_date": "2021-07-07",
+            "venue": "Socio-Economic Planning Sciences",
+            "publisher": "Elsevier BV",
+            "url": "https://doi.org/10.1016/j.seps.2021.101122",
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0038012121001142/pdf",
+            "authors": [
+              {
+                "name": "Alexei Arbona",
+                "id": "https://openalex.org/A5008609895"
+              },
+              {
+                "name": "Víctor Giménez",
+                "id": "https://openalex.org/A5011189342"
+              },
+              {
+                "name": "Sebastián López-Estrada",
+                "id": "https://openalex.org/A5083834695"
+              },
+              {
+                "name": "Diego Prior",
+                "id": "https://openalex.org/A5056938440"
+              }
+            ],
+            "citation_count": 31,
+            "reference_count": 68,
+            "is_open_access": true,
+            "oa_status": "hybrid",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by-nc-nd",
+              "oa_date": "2021-07-07",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.sciencedirect.com/science/article/pii/S0038012121001142/pdf",
+              "url_for_landing_page": "https://doi.org/10.1016/j.seps.2021.101122",
+              "url_for_pdf": "https://www.sciencedirect.com/science/article/pii/S0038012121001142/pdf",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+    },
+    {
+      "title": "The drivers of energy efficiency improvement among nine selected West African countries: A two-stage DEA methodology",
+      "authors": [
+        {
+          "name": "Francis Atta Sarpong",
+          "id": "https://openalex.org/A5016782222"
+        },
+        {
+          "name": "Jianmin Wang",
+          "id": "https://openalex.org/A5100373517"
+        },
+        {
+          "name": "Benjamin Blandful Cobbinah",
+          "id": "https://openalex.org/A5091211254"
+        },
+        {
+          "name": "Jesse Jackson Makwetta",
+          "id": "https://openalex.org/A5003795241"
+        },
+        {
+          "name": "Jie Chen",
+          "id": "https://openalex.org/A5008114041"
+        }
+      ],
+      "abstract": null,
+      "year": 2022,
+      "publication_date": "2022-08-27",
+      "venue": "Energy Strategy Reviews",
+      "publisher": "Elsevier BV",
+      "publication_type": "article",
+      "doi": "10.1016/j.esr.2022.100910",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4293879863",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1016/j.esr.2022.100910",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2211467X22001043/pdf",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 75,
+      "reference_count": 99,
+      "fields_of_study": [
+        "Energy, Environment, Economic Growth",
+        "Energy and Environment Impacts",
+        "Efficiency Analysis Using DEA"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "The drivers of energy efficiency improvement among nine selected West African countries: A two-stage DEA methodology",
+            "doi": "https://doi.org/10.1016/j.esr.2022.100910",
+            "year": 2022,
+            "publication_date": "2022-08-27",
+            "venue": "Energy Strategy Reviews",
+            "publisher": "Elsevier BV",
+            "url": "https://doi.org/10.1016/j.esr.2022.100910",
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2211467X22001043/pdf",
+            "authors": [
+              {
+                "name": "Francis Atta Sarpong",
+                "id": "https://openalex.org/A5016782222"
+              },
+              {
+                "name": "Jianmin Wang",
+                "id": "https://openalex.org/A5100373517"
+              },
+              {
+                "name": "Benjamin Blandful Cobbinah",
+                "id": "https://openalex.org/A5091211254"
+              },
+              {
+                "name": "Jesse Jackson Makwetta",
+                "id": "https://openalex.org/A5003795241"
+              },
+              {
+                "name": "Jie Chen",
+                "id": "https://openalex.org/A5008114041"
+              }
+            ],
+            "citation_count": 75,
+            "reference_count": 99,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by-nc-nd",
+              "oa_date": "2022-08-27",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.sciencedirect.com/science/article/pii/S2211467X22001043/pdf",
+              "url_for_landing_page": "https://doi.org/10.1016/j.esr.2022.100910",
+              "url_for_pdf": "https://www.sciencedirect.com/science/article/pii/S2211467X22001043/pdf",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+    },
+    {
+      "title": "Innovation, environmental sustainability and economic development: DEA-Bootstrap and multilevel analysis to compare two regions",
+      "authors": [
+        {
+          "name": "Stefano Bresciani",
+          "id": "https://openalex.org/A5028407190"
+        },
+        {
+          "name": "Rosa Puertas",
+          "id": "https://openalex.org/A5032567594"
+        },
+        {
+          "name": "Alberto Ferraris",
+          "id": "https://openalex.org/A5025632015"
+        },
+        {
+          "name": "Gabriele Santoro",
+          "id": "https://openalex.org/A5049026286"
+        }
+      ],
+      "abstract": null,
+      "year": 2021,
+      "publication_date": "2021-07-31",
+      "venue": "Technological Forecasting and Social Change",
+      "publisher": "Elsevier BV",
+      "publication_type": "article",
+      "doi": "10.1016/j.techfore.2021.121040",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W3192522364",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1016/j.techfore.2021.121040",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0040162521004728",
+      "is_open_access": true,
+      "oa_status": "bronze",
+      "citation_count": 90,
+      "reference_count": 108,
+      "fields_of_study": [
+        "Energy, Environment, Economic Growth",
+        "Environmental Sustainability in Business",
+        "Sustainable Supply Chain Management"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Innovation, environmental sustainability and economic development: DEA-Bootstrap and multilevel analysis to compare two regions",
+            "doi": "https://doi.org/10.1016/j.techfore.2021.121040",
+            "year": 2021,
+            "publication_date": "2021-07-31",
+            "venue": "Technological Forecasting and Social Change",
+            "publisher": "Elsevier BV",
+            "url": "https://doi.org/10.1016/j.techfore.2021.121040",
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S0040162521004728",
+            "authors": [
+              {
+                "name": "Stefano Bresciani",
+                "id": "https://openalex.org/A5028407190"
+              },
+              {
+                "name": "Rosa Puertas",
+                "id": "https://openalex.org/A5032567594"
+              },
+              {
+                "name": "Alberto Ferraris",
+                "id": "https://openalex.org/A5025632015"
+              },
+              {
+                "name": "Gabriele Santoro",
+                "id": "https://openalex.org/A5049026286"
+              }
+            ],
+            "citation_count": 90,
+            "reference_count": 108,
+            "is_open_access": true,
+            "oa_status": "bronze",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": null,
+              "oa_date": "2021-07-31",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.sciencedirect.com/science/article/pii/S0040162521004728",
+              "url_for_landing_page": "https://doi.org/10.1016/j.techfore.2021.121040",
+              "url_for_pdf": "https://www.sciencedirect.com/science/article/pii/S0040162521004728",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:50.527115+00:00"
+    },
+    {
+      "title": "Input-output efficiency, productivity dynamics, and determinants in western China’s higher education: A three-stage DEA, global Malmquist index, and Tobit model approach",
+      "authors": [
+        {
+          "given": "Rui",
+          "family": "Guo"
+        },
+        {
+          "given": "Meng",
+          "family": "Ye"
+        }
+      ],
+      "abstract": null,
+      "year": 2025,
+      "publication_date": "2025-6-11",
+      "venue": "PLOS One",
+      "publisher": "Public Library of Science (PLoS)",
+      "publication_type": "journal-article",
+      "doi": "10.1371/journal.pone.0325901",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": null,
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1371/journal.pone.0325901",
+      "pdf_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0325901&type=printable",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 10,
+      "reference_count": 166,
+      "fields_of_study": [],
+      "keywords": [],
+      "sources": [
+        "crossref",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "crossref",
+          "fields": {
+            "title": "Input-output efficiency, productivity dynamics, and determinants in western China’s higher education: A three-stage DEA, global Malmquist index, and Tobit model approach",
+            "doi": "10.1371/journal.pone.0325901",
+            "year": 2025,
+            "publication_date": "2025-6-11",
+            "venue": "PLOS One",
+            "publisher": "Public Library of Science (PLoS)",
+            "url": "https://doi.org/10.1371/journal.pone.0325901",
+            "authors": [
+              {
+                "given": "Rui",
+                "family": "Guo"
+              },
+              {
+                "given": "Meng",
+                "family": "Ye"
+              }
+            ],
+            "citation_count": 10,
+            "reference_count": 166,
+            "publication_type": "journal-article"
+          },
+          "retrieved_at": "2026-09-21T09:07:53.100209+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2025-06-11",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0325901&type=printable",
+              "url_for_landing_page": "https://doi.org/10.1371/journal.pone.0325901",
+              "url_for_pdf": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0325901&type=printable",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:07:53.100209+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:07:53.100209+00:00"
+    }
+  ],
+  "failed_providers": [
+    "arxiv: HTTP Error 406: Not Acceptable",
+    "semantic_scholar: HTTP Error 429: "
+  ],
+  "warnings": [],
+  "retrieved_at": "2026-09-21T09:08:19.234650+00:00"
+}

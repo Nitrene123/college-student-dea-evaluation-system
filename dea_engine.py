@@ -561,6 +561,383 @@ def evaluate_sbm(
     }
 
 
+def _validate_network_frame(
+    frame: pd.DataFrame,
+    dmu_col: str,
+    input_cols: list[str],
+    intermediate_cols: list[str],
+    output_cols: list[str],
+) -> tuple[pd.DataFrame, np.ndarray, np.ndarray, np.ndarray]:
+    """Validate a two-stage serial learning-production table."""
+
+    if frame is None or frame.empty:
+        raise ValueError("数据为空，无法进行两阶段网络DEA。")
+    if not input_cols or not intermediate_cols or not output_cols:
+        raise ValueError("两阶段网络DEA需要至少一个投入、一个中间过程指标和一个最终产出。")
+    groups = [input_cols, intermediate_cols, output_cols]
+    flattened = [col for group in groups for col in group]
+    if len(set(flattened)) != len(flattened):
+        raise ValueError("投入、中间过程指标和最终产出不能重复。")
+    required = [dmu_col] + flattened
+    missing = [col for col in required if col not in frame.columns]
+    if missing:
+        raise ValueError(f"网络DEA字段不存在：{missing}")
+
+    work = frame[required].copy()
+    work[dmu_col] = work[dmu_col].astype(str).str.strip()
+    if work[dmu_col].eq("").any() or work[dmu_col].duplicated().any():
+        raise ValueError("网络DEA要求DMU名称非空且唯一。")
+    if len(work) < 3:
+        raise ValueError("网络DEA至少需要3个决策单元。")
+
+    matrices = []
+    for columns, label in ((input_cols, "投入"), (intermediate_cols, "中间过程指标"), (output_cols, "最终产出")):
+        values = _as_numeric(work, columns)
+        if not np.isfinite(values).all():
+            raise ValueError(f"{label}中存在空值或非数值内容。")
+        if (values < 0).any():
+            raise ValueError(f"{label}必须为非负数。")
+        if (values.sum(axis=1) <= 0).any():
+            raise ValueError(f"{label}存在整行均为0的DMU，无法建立稳定的网络DEA模型。")
+        matrices.append(values)
+    return work.reset_index(drop=True), matrices[0], matrices[1], matrices[2]
+
+
+def _solve_sbm_target(
+    reference_x: np.ndarray,
+    reference_good_y: np.ndarray,
+    target_x: np.ndarray,
+    target_good_y: np.ndarray,
+    model: str = "BCC",
+    reference_bad_y: np.ndarray | None = None,
+    target_bad_y: np.ndarray | None = None,
+) -> dict[str, Any]:
+    """Solve an SBM target against an arbitrary reference technology.
+
+    The existing SBM solver evaluates one row against a table that contains
+    that same row.  Bootstrap and group-frontier analysis need a target that
+    is not necessarily part of the reference sample, so this helper exposes
+    the same linearized SBM formulation with separate target arrays.
+    """
+
+    model = model.upper()
+    if model not in {"CCR", "BCC"}:
+        raise ValueError("网络SBM规模报酬必须为CCR或BCC。")
+    reference_x = np.asarray(reference_x, dtype=float)
+    reference_good_y = np.asarray(reference_good_y, dtype=float)
+    target_x = np.asarray(target_x, dtype=float)
+    target_good_y = np.asarray(target_good_y, dtype=float)
+    bad_y = np.asarray(reference_bad_y, dtype=float) if reference_bad_y is not None else np.zeros((len(reference_x), 0))
+    target_bad = np.asarray(target_bad_y, dtype=float) if target_bad_y is not None else np.zeros(0)
+    ref_n, input_count = reference_x.shape
+    good_count = reference_good_y.shape[1]
+    bad_count = bad_y.shape[1]
+    if ref_n < 1 or target_x.shape != (input_count,) or target_good_y.shape != (good_count,):
+        raise ValueError("网络SBM目标或参考数据维度不一致。")
+    if bad_count and target_bad.shape != (bad_count,):
+        raise ValueError("网络SBM非期望产出维度不一致。")
+
+    slack_count = input_count + good_count + bad_count
+    total = ref_n + slack_count + 1
+    t_index = total - 1
+    s_input_start = ref_n
+    s_good_start = s_input_start + input_count
+    s_bad_start = s_good_start + good_count
+    objective = np.zeros(total)
+    objective[t_index] = 1.0
+    objective[s_input_start:s_good_start] = -1.0 / max(input_count, 1) / np.maximum(target_x, 1e-12)
+    if good_count:
+        objective[s_good_start:s_bad_start] = -1.0 / max(good_count + bad_count, 1) / np.maximum(target_good_y, 1e-12)
+    if bad_count:
+        objective[s_bad_start:t_index] = -1.0 / max(good_count + bad_count, 1) / np.maximum(target_bad, 1e-12)
+
+    a_eq: list[np.ndarray] = []
+    b_eq: list[float] = []
+    for col in range(input_count):
+        row = np.zeros(total)
+        row[:ref_n] = reference_x[:, col]
+        row[s_input_start + col] = 1.0
+        row[t_index] = -target_x[col]
+        a_eq.append(row)
+        b_eq.append(0.0)
+    for col in range(good_count):
+        row = np.zeros(total)
+        row[:ref_n] = reference_good_y[:, col]
+        row[s_good_start + col] = -1.0
+        row[t_index] = -target_good_y[col]
+        a_eq.append(row)
+        b_eq.append(0.0)
+    for col in range(bad_count):
+        row = np.zeros(total)
+        row[:ref_n] = bad_y[:, col]
+        row[s_bad_start + col] = 1.0
+        row[t_index] = -target_bad[col]
+        a_eq.append(row)
+        b_eq.append(0.0)
+    if model == "BCC":
+        row = np.zeros(total)
+        row[:ref_n] = 1.0
+        row[t_index] = -1.0
+        a_eq.append(row)
+        b_eq.append(0.0)
+
+    normalization = np.zeros(total)
+    normalization[t_index] = 1.0
+    if good_count:
+        normalization[s_good_start:s_bad_start] = 1.0 / max(good_count + bad_count, 1) / np.maximum(target_good_y, 1e-12)
+    if bad_count:
+        normalization[s_bad_start:t_index] = 1.0 / max(good_count + bad_count, 1) / np.maximum(target_bad, 1e-12)
+    a_eq.append(normalization)
+    b_eq.append(1.0)
+
+    result = linprog(
+        objective,
+        A_eq=np.asarray(a_eq),
+        b_eq=np.asarray(b_eq),
+        bounds=[(0.0, None)] * ref_n + [(0.0, None)] * slack_count + [(1e-9, None)],
+        method="highs",
+    )
+    if not result.success:
+        raise RuntimeError(f"网络SBM求解失败：{result.message}")
+
+    t = max(float(result.x[t_index]), 1e-12)
+    lambdas = result.x[:ref_n] / t
+    return {
+        "efficiency": float(np.clip(result.fun, 0.0, 1.0)),
+        "lambdas": lambdas,
+        "input_slacks": result.x[s_input_start:s_good_start] / t,
+        "good_slacks": result.x[s_good_start:s_bad_start] / t if good_count else np.zeros(0),
+        "bad_slacks": result.x[s_bad_start:t_index] / t if bad_count else np.zeros(0),
+    }
+
+
+def evaluate_network_sbm(
+    frame: pd.DataFrame,
+    dmu_col: str,
+    input_cols: list[str],
+    intermediate_cols: list[str],
+    output_cols: list[str],
+    model: str = "BCC",
+) -> dict[str, Any]:
+    """Evaluate a transparent two-stage serial SBM learning process.
+
+    Stage 1 maps initial learning inputs to intermediate learning-process
+    indicators; stage 2 maps those linked indicators to final academic
+    outputs. The network score is the geometric mean of the two stage scores,
+    which keeps the score in [0, 1] and makes a weak stage visible.
+    """
+
+    work, x, z, y = _validate_network_frame(frame, dmu_col, input_cols, intermediate_cols, output_cols)
+    stage1_solutions = []
+    stage2_solutions = []
+    records: list[dict[str, Any]] = []
+    details: dict[str, Any] = {}
+    for i in range(len(work)):
+        stage1 = _solve_sbm_target(x, z, x[i], z[i], model)
+        stage2 = _solve_sbm_target(z, y, z[i], y[i], model)
+        stage1_solutions.append(stage1)
+        stage2_solutions.append(stage2)
+        stage1_score = stage1["efficiency"]
+        stage2_score = stage2["efficiency"]
+        network_score = float(np.sqrt(max(stage1_score, 0.0) * max(stage2_score, 0.0)))
+        bottleneck = "投入→学习过程" if stage1_score < stage2_score - 1e-6 else "学习过程→学业结果" if stage2_score < stage1_score - 1e-6 else "两个阶段接近"
+        name = str(work.iloc[i][dmu_col])
+        peers1 = [{"DMU": str(work.iloc[j][dmu_col]), "权重": round(float(w), 6)} for j, w in enumerate(stage1["lambdas"]) if w > 1e-6]
+        peers2 = [{"DMU": str(work.iloc[j][dmu_col]), "权重": round(float(w), 6)} for j, w in enumerate(stage2["lambdas"]) if w > 1e-6]
+        details[name] = {
+            "阶段1标杆": peers1,
+            "阶段2标杆": peers2,
+            "阶段1投入冗余": {col: round(float(stage1["input_slacks"][k]), 6) for k, col in enumerate(input_cols) if stage1["input_slacks"][k] > 1e-6},
+            "阶段1过程不足": {col: round(float(stage1["good_slacks"][k]), 6) for k, col in enumerate(intermediate_cols) if stage1["good_slacks"][k] > 1e-6},
+            "阶段2过程冗余": {col: round(float(stage2["input_slacks"][k]), 6) for k, col in enumerate(intermediate_cols) if stage2["input_slacks"][k] > 1e-6},
+            "阶段2产出不足": {col: round(float(stage2["good_slacks"][k]), 6) for k, col in enumerate(output_cols) if stage2["good_slacks"][k] > 1e-6},
+        }
+        records.append({
+            "DMU": name,
+            "网络SBM效率": round(network_score, 6),
+            "阶段1效率": round(float(stage1_score), 6),
+            "阶段2效率": round(float(stage2_score), 6),
+            "瓶颈阶段": bottleneck,
+            "阶段差值": round(abs(float(stage1_score) - float(stage2_score)), 6),
+        })
+    table = pd.DataFrame(records).sort_values(["网络SBM效率", "DMU"], ascending=[False, True]).reset_index(drop=True)
+    return {
+        "config": {"dmu": dmu_col, "inputs": input_cols, "intermediate": intermediate_cols, "outputs": output_cols, "model": model, "network_score": "sqrt(stage1 * stage2)"},
+        "summary": {
+            "dmu_count": len(work),
+            "efficient_count": int((table["网络SBM效率"] >= 1.0 - 1e-5).sum()),
+            "average_efficiency": round(float(table["网络SBM效率"].mean()), 6),
+            "average_stage1": round(float(table["阶段1效率"].mean()), 6),
+            "average_stage2": round(float(table["阶段2效率"].mean()), 6),
+        },
+        "table": table,
+        "details": details,
+    }
+
+
+def evaluate_group_meta_frontier(
+    frame: pd.DataFrame,
+    dmu_col: str,
+    group_col: str,
+    input_cols: list[str],
+    intermediate_cols: list[str],
+    output_cols: list[str],
+    model: str = "BCC",
+) -> dict[str, Any]:
+    """Compare pooled and within-group two-stage frontiers.
+
+    The pooled score is the meta-frontier score. The within-group score is
+    the score against peers sharing the selected group. Their ratio is shown
+    as a technology-gap indicator and is intentionally labelled as a
+    comparative diagnostic rather than a causal effect.
+    """
+
+    work, x, z, y = _validate_network_frame(frame, dmu_col, input_cols, intermediate_cols, output_cols)
+    if group_col not in frame.columns or group_col == dmu_col:
+        raise ValueError("请选择有效的群体字段。")
+    groups = frame[group_col].astype(str).str.strip().to_numpy()
+    if len(groups) != len(work):
+        raise ValueError("群体字段行数与有效DMU行数不一致。")
+    if (groups == "").any():
+        raise ValueError("群体字段存在空值，请先补齐专业、年级或班级信息。")
+    pooled = evaluate_network_sbm(work.assign(**{group_col: groups}), dmu_col, input_cols, intermediate_cols, output_cols, model)
+    pooled_scores = {str(row["DMU"]): float(row["网络SBM效率"]) for _, row in pooled["table"].iterrows()}
+    group_scores: dict[str, float] = {}
+    group_stage: dict[str, tuple[float, float]] = {}
+    group_sizes = pd.Series(groups).value_counts().to_dict()
+    valid_groups = 0
+    for group in sorted(set(groups)):
+        idx = np.flatnonzero(groups == group)
+        if len(idx) < 3:
+            continue
+        valid_groups += 1
+        scores = []
+        stage_scores = []
+        for i in idx:
+            s1 = _solve_sbm_target(x[idx], z[idx], x[i], z[i], model)["efficiency"]
+            s2 = _solve_sbm_target(z[idx], y[idx], z[i], y[i], model)["efficiency"]
+            scores.append(np.sqrt(max(s1, 0.0) * max(s2, 0.0)))
+            stage_scores.append((s1, s2))
+        for local, i in enumerate(idx):
+            name = str(work.iloc[i][dmu_col])
+            group_scores[name] = float(scores[local])
+            group_stage[name] = stage_scores[local]
+    name_to_group = {str(work.iloc[i][dmu_col]): str(groups[i]) for i in range(len(work))}
+    records = []
+    for _, row in pooled["table"].iterrows():
+        name = str(row["DMU"])
+        within = group_scores.get(name, np.nan)
+        meta = pooled_scores[name]
+        group = name_to_group[name]
+        records.append({
+            "DMU": name,
+            "群体": group,
+            "群体内效率": round(within, 6) if np.isfinite(within) else np.nan,
+            "元前沿效率": round(meta, 6),
+            "技术差距比": round(float(meta / within), 6) if np.isfinite(within) and within > 1e-12 else np.nan,
+            "群体样本量": int(group_sizes.get(group, 0)),
+        })
+    table = pd.DataFrame(records).sort_values(["元前沿效率", "DMU"], ascending=[False, True], na_position="last").reset_index(drop=True)
+    group_table = table.groupby("群体", dropna=False).agg(
+        群体样本量=("DMU", "count"),
+        群体内平均效率=("群体内效率", "mean"),
+        元前沿平均效率=("元前沿效率", "mean"),
+        平均技术差距比=("技术差距比", "mean"),
+    ).reset_index()
+    return {
+        "config": {"dmu": dmu_col, "group": group_col, "inputs": input_cols, "intermediate": intermediate_cols, "outputs": output_cols, "model": model},
+        "summary": {"group_count": int(len(set(groups))), "valid_group_count": int(valid_groups), "average_meta_efficiency": round(float(table["元前沿效率"].mean()), 6)},
+        "table": table,
+        "group_table": group_table,
+        "base": pooled,
+    }
+
+
+def bootstrap_network_sbm(
+    frame: pd.DataFrame,
+    dmu_col: str,
+    input_cols: list[str],
+    intermediate_cols: list[str],
+    output_cols: list[str],
+    model: str = "BCC",
+    replications: int = 80,
+    random_state: int = 42,
+) -> dict[str, Any]:
+    """Bootstrap the two-stage network scores and return uncertainty bands."""
+
+    if replications < 10:
+        raise ValueError("Bootstrap重复次数至少为10。")
+    work, x, z, y = _validate_network_frame(frame, dmu_col, input_cols, intermediate_cols, output_cols)
+    base = evaluate_network_sbm(work, dmu_col, input_cols, intermediate_cols, output_cols, model)
+    n = len(work)
+    bootstrap_scores = np.full((replications, n), np.nan, dtype=float)
+    rng = np.random.default_rng(random_state)
+    for replicate in range(replications):
+        sample = rng.integers(0, n, size=n)
+        reference_x = x[sample]
+        reference_z = z[sample]
+        reference_y = y[sample]
+        for i in range(n):
+            try:
+                stage1 = _solve_sbm_target(reference_x, reference_z, x[i], z[i], model)
+                stage2 = _solve_sbm_target(reference_z, reference_y, z[i], y[i], model)
+            except RuntimeError:
+                # A resampled frontier can fail to dominate a target whose
+                # output lies above every sampled peer. Add the target as a
+                # feasibility anchor for this replicate, while retaining the
+                # sampled peers for discrimination.
+                stage1 = _solve_sbm_target(np.vstack([reference_x, x[i]]), np.vstack([reference_z, z[i]]), x[i], z[i], model)
+                stage2 = _solve_sbm_target(np.vstack([reference_z, z[i]]), np.vstack([reference_y, y[i]]), z[i], y[i], model)
+            bootstrap_scores[replicate, i] = np.sqrt(max(stage1["efficiency"], 0.0) * max(stage2["efficiency"], 0.0))
+
+    base_by_name = {str(work.iloc[i][dmu_col]): float(base["table"].set_index("DMU").loc[str(work.iloc[i][dmu_col]), "网络SBM效率"]) for i in range(n)}
+    base_scores = np.array([base_by_name[str(work.iloc[i][dmu_col])] for i in range(n)], dtype=float)
+    means = np.zeros(n, dtype=float)
+    lows = np.zeros(n, dtype=float)
+    highs = np.zeros(n, dtype=float)
+    for i in range(n):
+        values = bootstrap_scores[:, i]
+        values = values[np.isfinite(values)]
+        if len(values) < 3:
+            means[i] = base_scores[i]
+            lows[i] = base_scores[i]
+            highs[i] = base_scores[i]
+        else:
+            means[i] = float(np.mean(values))
+            lows[i] = float(np.percentile(values, 2.5))
+            highs[i] = float(np.percentile(values, 97.5))
+    corrected = np.clip(2 * base_scores - means, 0.0, 1.0)
+    rank_correlations: list[float] = []
+    base_rank = pd.Series(base_scores).rank(method="average").to_numpy()
+    for values in bootstrap_scores:
+        if np.isfinite(values).all() and np.std(values) > 1e-12:
+            sample_rank = pd.Series(values).rank(method="average").to_numpy()
+            rank_correlations.append(float(np.corrcoef(base_rank, sample_rank)[0, 1]))
+
+    uncertainty = []
+    for i in range(n):
+        if lows[i] >= 0.999999:
+            label = "稳定高效"
+        elif highs[i] < 0.8:
+            label = "稳定偏低"
+        else:
+            label = "边界不确定"
+        uncertainty.append((means[i], lows[i], highs[i], corrected[i], label))
+    table = base["table"].copy()
+    by_name = {str(work.iloc[i][dmu_col]): i for i in range(n)}
+    table["Bootstrap均值"] = [round(float(uncertainty[by_name[str(name)]][0]), 6) for name in table["DMU"]]
+    table["Bootstrap下限95%"] = [round(float(uncertainty[by_name[str(name)]][1]), 6) for name in table["DMU"]]
+    table["Bootstrap上限95%"] = [round(float(uncertainty[by_name[str(name)]][2]), 6) for name in table["DMU"]]
+    table["偏差修正效率"] = [round(float(uncertainty[by_name[str(name)]][3]), 6) for name in table["DMU"]]
+    table["稳健性标签"] = [uncertainty[by_name[str(name)]][4] for name in table["DMU"]]
+    result = dict(base)
+    result["config"] = {**base["config"], "bootstrap_replications": int(replications), "random_state": int(random_state)}
+    result["summary"] = {**base["summary"], "bootstrap_replications": int(replications), "average_ci_width": round(float(np.nanmean(highs - lows)), 6), "mean_rank_correlation": round(float(np.mean(rank_correlations)), 6) if rank_correlations else None}
+    result["table"] = table
+    result["bootstrap_scores"] = bootstrap_scores
+    return result
+
+
 def evaluate_malmquist(
     frame: pd.DataFrame,
     dmu_col: str,

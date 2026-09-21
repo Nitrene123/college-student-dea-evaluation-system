@@ -1,0 +1,2045 @@
+{
+  "query": "data envelopment analysis higher education student performance efficiency",
+  "providers_used": [
+    "openalex",
+    "semantic_scholar",
+    "crossref",
+    "arxiv"
+  ],
+  "results": [
+    {
+      "title": "Data envelopment analysis and its application to the measurement of efficiency in higher education",
+      "authors": [
+        {
+          "given": "Jill",
+          "family": "Johnes"
+        }
+      ],
+      "abstract": null,
+      "year": 2006,
+      "publication_date": "2006-6",
+      "venue": "Economics of Education Review",
+      "publisher": "Elsevier BV",
+      "publication_type": "journal-article",
+      "doi": "10.1016/j.econedurev.2005.02.005",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": null,
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1016/j.econedurev.2005.02.005",
+      "pdf_url": "http://eprints.hud.ac.uk/id/eprint/23581/1/JohnesData.pdf",
+      "is_open_access": true,
+      "oa_status": "green",
+      "citation_count": 405,
+      "reference_count": 40,
+      "fields_of_study": [],
+      "keywords": [],
+      "sources": [
+        "crossref",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "crossref",
+          "fields": {
+            "title": "Data envelopment analysis and its application to the measurement of efficiency in higher education",
+            "doi": "10.1016/j.econedurev.2005.02.005",
+            "year": 2006,
+            "publication_date": "2006-6",
+            "venue": "Economics of Education Review",
+            "publisher": "Elsevier BV",
+            "url": "https://doi.org/10.1016/j.econedurev.2005.02.005",
+            "authors": [
+              {
+                "given": "Jill",
+                "family": "Johnes"
+              }
+            ],
+            "citation_count": 405,
+            "reference_count": 40,
+            "publication_type": "journal-article"
+          },
+          "retrieved_at": "2026-09-21T09:03:46.800860+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": "ac465c23c08b76cbec4",
+              "evidence": "deprecated",
+              "host_type": "repository",
+              "is_best": true,
+              "license": null,
+              "oa_date": "2005-09-13",
+              "pmh_id": "oai:eprints.hud.ac.uk:23581",
+              "repository_institution": "University of Huddersfield",
+              "updated": "deprecated",
+              "url": "http://eprints.hud.ac.uk/id/eprint/23581/1/JohnesData.pdf",
+              "url_for_landing_page": "http://eprints.hud.ac.uk/id/eprint/23581/2/JohnesData.doc",
+              "url_for_pdf": "http://eprints.hud.ac.uk/id/eprint/23581/1/JohnesData.pdf",
+              "version": "submittedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:46.800860+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:46.800860+00:00"
+    },
+    {
+      "title": "Data Envelopment Analysis on the Efficiency of the Higher Education Institutes in Korea",
+      "authors": [
+        {
+          "given": null,
+          "family": "신수림"
+        },
+        {
+          "given": null,
+          "family": "정진철"
+        }
+      ],
+      "abstract": null,
+      "year": 2012,
+      "publication_date": "2012-6",
+      "venue": "Journal ofAgricultural Education and Human Resource Development",
+      "publisher": "The Korean Society for Agriculture Education and Human Resource Development",
+      "publication_type": "journal-article",
+      "doi": "10.23840/agehrd.2012.44.2.97",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": null,
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.23840/agehrd.2012.44.2.97",
+      "pdf_url": "https://doi.org/10.23840/agehrd.2012.44.2.97",
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "citation_count": 0,
+      "reference_count": 32,
+      "fields_of_study": [],
+      "keywords": [],
+      "sources": [
+        "crossref",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "crossref",
+          "fields": {
+            "title": "Data Envelopment Analysis on the Efficiency of the Higher Education Institutes in Korea",
+            "doi": "10.23840/agehrd.2012.44.2.97",
+            "year": 2012,
+            "publication_date": "2012-6",
+            "venue": "Journal ofAgricultural Education and Human Resource Development",
+            "publisher": "The Korean Society for Agriculture Education and Human Resource Development",
+            "url": "https://doi.org/10.23840/agehrd.2012.44.2.97",
+            "authors": [
+              {
+                "given": null,
+                "family": "신수림"
+              },
+              {
+                "given": null,
+                "family": "정진철"
+              }
+            ],
+            "citation_count": 0,
+            "reference_count": 32,
+            "publication_type": "journal-article"
+          },
+          "retrieved_at": "2026-09-21T09:03:46.800860+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by-nc",
+              "oa_date": "2012-06-01",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://doi.org/10.23840/agehrd.2012.44.2.97",
+              "url_for_landing_page": "https://doi.org/10.23840/agehrd.2012.44.2.97",
+              "url_for_pdf": null,
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:46.800860+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:46.800860+00:00"
+    },
+    {
+      "title": "Data Envelopment Analysis for the Efficiency of Higher Education Departments at Sepuluh Nopember Institute of Technology, Indonesia",
+      "authors": [
+        {
+          "name": "Zakiatul Wildani",
+          "id": "https://openalex.org/A5022645594"
+        },
+        {
+          "name": "Wahyu Wibowo",
+          "id": "https://openalex.org/A5064400904"
+        },
+        {
+          "name": "Sri Pingit Wulandari",
+          "id": null
+        },
+        {
+          "name": "Lucia Ari Dinanti",
+          "id": "https://openalex.org/A5046241499"
+        }
+      ],
+      "abstract": null,
+      "year": 2023,
+      "publication_date": "2023-04-09",
+      "venue": "European Journal of Educational Research",
+      "publisher": "RU Publications",
+      "publication_type": "article",
+      "doi": "10.12973/eu-jer.12.2.1153",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4362718901",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.12973/eu-jer.12.2.1153",
+      "pdf_url": "https://pdf.eu-jer.com/EU-JER_12_2_1153.pdf",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 9,
+      "reference_count": 33,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Fiscal Policy and Economic Growth",
+        "Optimization and Mathematical Programming"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Data Envelopment Analysis for the Efficiency of Higher Education Departments at Sepuluh Nopember Institute of Technology, Indonesia",
+            "doi": "https://doi.org/10.12973/eu-jer.12.2.1153",
+            "year": 2023,
+            "publication_date": "2023-04-09",
+            "venue": "European Journal of Educational Research",
+            "publisher": "RU Publications",
+            "url": "https://doi.org/10.12973/eu-jer.12.2.1153",
+            "pdf_url": "https://pdf.eu-jer.com/EU-JER_12_2_1153.pdf",
+            "authors": [
+              {
+                "name": "Zakiatul Wildani",
+                "id": "https://openalex.org/A5022645594"
+              },
+              {
+                "name": "Wahyu Wibowo",
+                "id": "https://openalex.org/A5064400904"
+              },
+              {
+                "name": "Sri Pingit Wulandari",
+                "id": null
+              },
+              {
+                "name": "Lucia Ari Dinanti",
+                "id": "https://openalex.org/A5046241499"
+              }
+            ],
+            "citation_count": 9,
+            "reference_count": 33,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2023-04-09",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://pdf.eu-jer.com/EU-JER_12_2_1153.pdf",
+              "url_for_landing_page": "https://doi.org/10.12973/eu-jer.12.2.1153",
+              "url_for_pdf": "https://pdf.eu-jer.com/EU-JER_12_2_1153.pdf",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "Artificial intelligence applications in Latin American higher education: a systematic review",
+      "authors": [
+        {
+          "name": "Sdenka Zobeida Salas‐Pilco",
+          "id": "https://openalex.org/A5090383550"
+        },
+        {
+          "name": "Yuqin Yang",
+          "id": "https://openalex.org/A5006875779"
+        }
+      ],
+      "abstract": null,
+      "year": 2022,
+      "publication_date": "2022-04-17",
+      "venue": "International Journal of Educational Technology in Higher Education",
+      "publisher": "Springer Nature",
+      "publication_type": "review",
+      "doi": "10.1186/s41239-022-00326-w",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4223914794",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1186/s41239-022-00326-w",
+      "pdf_url": "https://educationaltechnologyjournal.springeropen.com/track/pdf/10.1186/s41239-022-00326-w",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 316,
+      "reference_count": 63,
+      "fields_of_study": [
+        "Online Learning and Analytics",
+        "Scientific Research and Technology"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Artificial intelligence applications in Latin American higher education: a systematic review",
+            "doi": "https://doi.org/10.1186/s41239-022-00326-w",
+            "year": 2022,
+            "publication_date": "2022-04-17",
+            "venue": "International Journal of Educational Technology in Higher Education",
+            "publisher": "Springer Nature",
+            "url": "https://doi.org/10.1186/s41239-022-00326-w",
+            "pdf_url": "https://educationaltechnologyjournal.springeropen.com/track/pdf/10.1186/s41239-022-00326-w",
+            "authors": [
+              {
+                "name": "Sdenka Zobeida Salas‐Pilco",
+                "id": "https://openalex.org/A5090383550"
+              },
+              {
+                "name": "Yuqin Yang",
+                "id": "https://openalex.org/A5006875779"
+              }
+            ],
+            "citation_count": 316,
+            "reference_count": 63,
+            "is_open_access": true,
+            "oa_status": "diamond",
+            "publication_type": "review"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2022-04-17",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://educationaltechnologyjournal.springeropen.com/track/pdf/10.1186/s41239-022-00326-w",
+              "url_for_landing_page": "https://doi.org/10.1186/s41239-022-00326-w",
+              "url_for_pdf": "https://educationaltechnologyjournal.springeropen.com/track/pdf/10.1186/s41239-022-00326-w",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "Immersive virtual reality in higher education: a systematic review of the scientific literature",
+      "authors": [
+        {
+          "name": "Christian M. Stracke",
+          "id": "https://openalex.org/A5068425160"
+        },
+        {
+          "name": "Pia Bothe",
+          "id": "https://openalex.org/A5116936947"
+        },
+        {
+          "name": "Simon Adler",
+          "id": "https://openalex.org/A5084323108"
+        },
+        {
+          "name": "Evelyn Susanne Heller",
+          "id": "https://openalex.org/A5116936948"
+        },
+        {
+          "name": "Jonas Deuchler",
+          "id": "https://openalex.org/A5015636165"
+        },
+        {
+          "name": "Jenny Pomino",
+          "id": "https://openalex.org/A5116936949"
+        },
+        {
+          "name": "Matthias Wölfel",
+          "id": "https://openalex.org/A5064051745"
+        }
+      ],
+      "abstract": null,
+      "year": 2025,
+      "publication_date": "2025-04-04",
+      "venue": "Virtual Reality",
+      "publisher": "Springer Science+Business Media",
+      "publication_type": "review",
+      "doi": "10.1007/s10055-025-01136-x",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4409186314",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1007/s10055-025-01136-x",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10055-025-01136-x.pdf",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 79,
+      "reference_count": 91,
+      "fields_of_study": [
+        "Virtual Reality Applications and Impacts",
+        "Augmented Reality Applications",
+        "Educational Games and Gamification"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Immersive virtual reality in higher education: a systematic review of the scientific literature",
+            "doi": "https://doi.org/10.1007/s10055-025-01136-x",
+            "year": 2025,
+            "publication_date": "2025-04-04",
+            "venue": "Virtual Reality",
+            "publisher": "Springer Science+Business Media",
+            "url": "https://doi.org/10.1007/s10055-025-01136-x",
+            "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10055-025-01136-x.pdf",
+            "authors": [
+              {
+                "name": "Christian M. Stracke",
+                "id": "https://openalex.org/A5068425160"
+              },
+              {
+                "name": "Pia Bothe",
+                "id": "https://openalex.org/A5116936947"
+              },
+              {
+                "name": "Simon Adler",
+                "id": "https://openalex.org/A5084323108"
+              },
+              {
+                "name": "Evelyn Susanne Heller",
+                "id": "https://openalex.org/A5116936948"
+              },
+              {
+                "name": "Jonas Deuchler",
+                "id": "https://openalex.org/A5015636165"
+              },
+              {
+                "name": "Jenny Pomino",
+                "id": "https://openalex.org/A5116936949"
+              },
+              {
+                "name": "Matthias Wölfel",
+                "id": "https://openalex.org/A5064051745"
+              }
+            ],
+            "citation_count": 79,
+            "reference_count": 91,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "review"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2025-04-04",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://link.springer.com/content/pdf/10.1007/s10055-025-01136-x.pdf",
+              "url_for_landing_page": "https://doi.org/10.1007/s10055-025-01136-x",
+              "url_for_pdf": "https://link.springer.com/content/pdf/10.1007/s10055-025-01136-x.pdf",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "Using Data Envelopment Analysis to Improve Estimates of Higher Education Institution’s Per‐student Education Costs<sup>1</sup>",
+      "authors": [
+        {
+          "given": "Carlo",
+          "family": "Salerno"
+        }
+      ],
+      "abstract": null,
+      "year": 2006,
+      "publication_date": "2006-9",
+      "venue": "Education Economics",
+      "publisher": "Informa UK Limited",
+      "publication_type": "journal-article",
+      "doi": "10.1080/09645290600777485",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": null,
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1080/09645290600777485",
+      "pdf_url": null,
+      "is_open_access": false,
+      "oa_status": "closed",
+      "citation_count": 13,
+      "reference_count": 27,
+      "fields_of_study": [],
+      "keywords": [],
+      "sources": [
+        "crossref",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "crossref",
+          "fields": {
+            "title": "Using Data Envelopment Analysis to Improve Estimates of Higher Education Institution’s Per‐student Education Costs<sup>1</sup>",
+            "doi": "10.1080/09645290600777485",
+            "year": 2006,
+            "publication_date": "2006-9",
+            "venue": "Education Economics",
+            "publisher": "Informa UK Limited",
+            "url": "https://doi.org/10.1080/09645290600777485",
+            "authors": [
+              {
+                "given": "Carlo",
+                "family": "Salerno"
+              }
+            ],
+            "citation_count": 13,
+            "reference_count": 27,
+            "publication_type": "journal-article"
+          },
+          "retrieved_at": "2026-09-21T09:03:46.800860+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {},
+            "is_oa": false
+          },
+          "retrieved_at": "2026-09-21T09:03:46.800860+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:46.800860+00:00"
+    },
+    {
+      "title": "Literature Review of Accreditation Systems in Higher Education",
+      "authors": [
+        {
+          "name": "Nelson Duarte",
+          "id": "https://openalex.org/A5023187857"
+        },
+        {
+          "name": "Ricardo Vardasca",
+          "id": "https://openalex.org/A5028253479"
+        }
+      ],
+      "abstract": null,
+      "year": 2023,
+      "publication_date": "2023-06-07",
+      "venue": "Education Sciences",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "publication_type": "article",
+      "doi": "10.3390/educsci13060582",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4379800165",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.3390/educsci13060582",
+      "pdf_url": "https://www.mdpi.com/2227-7102/13/6/582/pdf?version=1686117535",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 96,
+      "reference_count": 60,
+      "fields_of_study": [
+        "Higher Education Governance and Development",
+        "Evaluation of Teaching Practices",
+        "Innovations in Medical Education"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Literature Review of Accreditation Systems in Higher Education",
+            "doi": "https://doi.org/10.3390/educsci13060582",
+            "year": 2023,
+            "publication_date": "2023-06-07",
+            "venue": "Education Sciences",
+            "publisher": "Multidisciplinary Digital Publishing Institute",
+            "url": "https://doi.org/10.3390/educsci13060582",
+            "pdf_url": "https://www.mdpi.com/2227-7102/13/6/582/pdf?version=1686117535",
+            "authors": [
+              {
+                "name": "Nelson Duarte",
+                "id": "https://openalex.org/A5023187857"
+              },
+              {
+                "name": "Ricardo Vardasca",
+                "id": "https://openalex.org/A5028253479"
+              }
+            ],
+            "citation_count": 96,
+            "reference_count": 60,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2023-06-07",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.mdpi.com/2227-7102/13/6/582/pdf?version=1686117535",
+              "url_for_landing_page": "https://doi.org/10.3390/educsci13060582",
+              "url_for_pdf": "https://www.mdpi.com/2227-7102/13/6/582/pdf?version=1686117535",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "A Review on the 40 Years of Existence of Data Envelopment Analysis Models: Historic Development and Current Trends",
+      "authors": [
+        {
+          "name": "Ankita Panwar",
+          "id": "https://openalex.org/A5044796931"
+        },
+        {
+          "name": "Maryam Olfati",
+          "id": "https://openalex.org/A5108859317"
+        },
+        {
+          "name": "Millie Pant",
+          "id": "https://openalex.org/A5081953081"
+        },
+        {
+          "name": "Václav Snåšel",
+          "id": "https://openalex.org/A5011543714"
+        }
+      ],
+      "abstract": null,
+      "year": 2022,
+      "publication_date": "2022-06-10",
+      "venue": "Archives of Computational Methods in Engineering",
+      "publisher": "Springer Science+Business Media",
+      "publication_type": "article",
+      "doi": "10.1007/s11831-022-09770-3",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4281664403",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1007/s11831-022-09770-3",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11831-022-09770-3.pdf",
+      "is_open_access": true,
+      "oa_status": "bronze",
+      "citation_count": 132,
+      "reference_count": 242,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Multi-Criteria Decision Making",
+        "Optimization and Mathematical Programming"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "A Review on the 40 Years of Existence of Data Envelopment Analysis Models: Historic Development and Current Trends",
+            "doi": "https://doi.org/10.1007/s11831-022-09770-3",
+            "year": 2022,
+            "publication_date": "2022-06-10",
+            "venue": "Archives of Computational Methods in Engineering",
+            "publisher": "Springer Science+Business Media",
+            "url": "https://doi.org/10.1007/s11831-022-09770-3",
+            "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11831-022-09770-3.pdf",
+            "authors": [
+              {
+                "name": "Ankita Panwar",
+                "id": "https://openalex.org/A5044796931"
+              },
+              {
+                "name": "Maryam Olfati",
+                "id": "https://openalex.org/A5108859317"
+              },
+              {
+                "name": "Millie Pant",
+                "id": "https://openalex.org/A5081953081"
+              },
+              {
+                "name": "Václav Snåšel",
+                "id": "https://openalex.org/A5011543714"
+              }
+            ],
+            "citation_count": 132,
+            "reference_count": 242,
+            "is_open_access": true,
+            "oa_status": "bronze",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": null,
+              "oa_date": "2022-06-10",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://link.springer.com/content/pdf/10.1007/s11831-022-09770-3.pdf",
+              "url_for_landing_page": "https://doi.org/10.1007/s11831-022-09770-3",
+              "url_for_pdf": "https://link.springer.com/content/pdf/10.1007/s11831-022-09770-3.pdf",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "Combining reference point based composite indicators with data envelopment analysis: application to the assessment of universities",
+      "authors": [
+        {
+          "name": "Samira El Gibari",
+          "id": "https://openalex.org/A5035594409"
+        },
+        {
+          "name": "Trinidad Gómez",
+          "id": "https://openalex.org/A5052034141"
+        },
+        {
+          "name": "Francisco Ruiz",
+          "id": "https://openalex.org/A5088525567"
+        }
+      ],
+      "abstract": null,
+      "year": 2022,
+      "publication_date": "2022-07-08",
+      "venue": "Scientometrics",
+      "publisher": "Springer Nature (Netherlands)",
+      "publication_type": "article",
+      "doi": "10.1007/s11192-022-04436-0",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4284898648",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1007/s11192-022-04436-0",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11192-022-04436-0.pdf",
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "citation_count": 19,
+      "reference_count": 54,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Combining reference point based composite indicators with data envelopment analysis: application to the assessment of universities",
+            "doi": "https://doi.org/10.1007/s11192-022-04436-0",
+            "year": 2022,
+            "publication_date": "2022-07-08",
+            "venue": "Scientometrics",
+            "publisher": "Springer Nature (Netherlands)",
+            "url": "https://doi.org/10.1007/s11192-022-04436-0",
+            "pdf_url": "https://link.springer.com/content/pdf/10.1007/s11192-022-04436-0.pdf",
+            "authors": [
+              {
+                "name": "Samira El Gibari",
+                "id": "https://openalex.org/A5035594409"
+              },
+              {
+                "name": "Trinidad Gómez",
+                "id": "https://openalex.org/A5052034141"
+              },
+              {
+                "name": "Francisco Ruiz",
+                "id": "https://openalex.org/A5088525567"
+              }
+            ],
+            "citation_count": 19,
+            "reference_count": 54,
+            "is_open_access": true,
+            "oa_status": "hybrid",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2022-07-08",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://link.springer.com/content/pdf/10.1007/s11192-022-04436-0.pdf",
+              "url_for_landing_page": "https://doi.org/10.1007/s11192-022-04436-0",
+              "url_for_pdf": "https://link.springer.com/content/pdf/10.1007/s11192-022-04436-0.pdf",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "The Application of Data Envelopment Analysis to Emergency Departments and Management of Emergency Conditions: A Narrative Review",
+      "authors": [
+        {
+          "name": "Mirpouya Mirmozaffari",
+          "id": "https://openalex.org/A5068048733"
+        },
+        {
+          "name": "Noreen Kamal",
+          "id": "https://openalex.org/A5081925377"
+        }
+      ],
+      "abstract": null,
+      "year": 2023,
+      "publication_date": "2023-09-14",
+      "venue": "Healthcare",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "publication_type": "review",
+      "doi": "10.3390/healthcare11182541",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4386742161",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.3390/healthcare11182541",
+      "pdf_url": "https://www.mdpi.com/2227-9032/11/18/2541/pdf?version=1694678447",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 24,
+      "reference_count": 116,
+      "fields_of_study": [
+        "Healthcare Operations and Scheduling Optimization",
+        "Emergency and Acute Care Studies",
+        "Healthcare Policy and Management"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "The Application of Data Envelopment Analysis to Emergency Departments and Management of Emergency Conditions: A Narrative Review",
+            "doi": "https://doi.org/10.3390/healthcare11182541",
+            "year": 2023,
+            "publication_date": "2023-09-14",
+            "venue": "Healthcare",
+            "publisher": "Multidisciplinary Digital Publishing Institute",
+            "url": "https://doi.org/10.3390/healthcare11182541",
+            "pdf_url": "https://www.mdpi.com/2227-9032/11/18/2541/pdf?version=1694678447",
+            "authors": [
+              {
+                "name": "Mirpouya Mirmozaffari",
+                "id": "https://openalex.org/A5068048733"
+              },
+              {
+                "name": "Noreen Kamal",
+                "id": "https://openalex.org/A5081925377"
+              }
+            ],
+            "citation_count": 24,
+            "reference_count": 116,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "review"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2023-09-14",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.mdpi.com/2227-9032/11/18/2541/pdf?version=1694678447",
+              "url_for_landing_page": "https://doi.org/10.3390/healthcare11182541",
+              "url_for_pdf": "https://www.mdpi.com/2227-9032/11/18/2541/pdf?version=1694678447",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "A mixed-integer slacks-based measure data envelopment analysis for efficiency measuring of German university hospitals",
+      "authors": [
+        {
+          "name": "Mansour Zarrin",
+          "id": "https://openalex.org/A5014133886"
+        }
+      ],
+      "abstract": null,
+      "year": 2022,
+      "publication_date": "2022-11-17",
+      "venue": "Health Care Management Science",
+      "publisher": "Springer Science+Business Media",
+      "publication_type": "article",
+      "doi": "10.1007/s10729-022-09620-5",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4309236914",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1007/s10729-022-09620-5",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10729-022-09620-5.pdf",
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "citation_count": 19,
+      "reference_count": 41,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Healthcare Policy and Management",
+        "Health Systems, Economic Evaluations, Quality of Life"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "A mixed-integer slacks-based measure data envelopment analysis for efficiency measuring of German university hospitals",
+            "doi": "https://doi.org/10.1007/s10729-022-09620-5",
+            "year": 2022,
+            "publication_date": "2022-11-17",
+            "venue": "Health Care Management Science",
+            "publisher": "Springer Science+Business Media",
+            "url": "https://doi.org/10.1007/s10729-022-09620-5",
+            "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10729-022-09620-5.pdf",
+            "authors": [
+              {
+                "name": "Mansour Zarrin",
+                "id": "https://openalex.org/A5014133886"
+              }
+            ],
+            "citation_count": 19,
+            "reference_count": 41,
+            "is_open_access": true,
+            "oa_status": "hybrid",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2022-11-17",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://link.springer.com/content/pdf/10.1007/s10729-022-09620-5.pdf",
+              "url_for_landing_page": "https://doi.org/10.1007/s10729-022-09620-5",
+              "url_for_pdf": "https://link.springer.com/content/pdf/10.1007/s10729-022-09620-5.pdf",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "Quantifying the influence of supplier relationship management and supply chain performance",
+      "authors": [
+        {
+          "name": "Md Mehedi Hasan Emon",
+          "id": "https://openalex.org/A5082282169"
+        },
+        {
+          "name": "Tahsina Khan",
+          "id": "https://openalex.org/A5061664875"
+        },
+        {
+          "name": "Saleh Ahmed Jalal Siam",
+          "id": "https://openalex.org/A5093482247"
+        }
+      ],
+      "abstract": null,
+      "year": 2024,
+      "publication_date": "2024-04-05",
+      "venue": "Brazilian Journal of Operations & Production Management",
+      "publisher": "Associação Brasileira de Engenharia de Produção",
+      "publication_type": "article",
+      "doi": "10.14488/bjopm.2015.2024",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4393969728",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.14488/bjopm.2015.2024",
+      "pdf_url": "https://doi.org/10.14488/bjopm.2015.2024",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 190,
+      "reference_count": 90,
+      "fields_of_study": [
+        "Quality and Supply Management",
+        "Outsourcing and Supply Chain Management",
+        "Supply Chain Resilience and Risk Management"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Quantifying the influence of supplier relationship management and supply chain performance",
+            "doi": "https://doi.org/10.14488/bjopm.2015.2024",
+            "year": 2024,
+            "publication_date": "2024-04-05",
+            "venue": "Brazilian Journal of Operations & Production Management",
+            "publisher": "Associação Brasileira de Engenharia de Produção",
+            "url": "https://doi.org/10.14488/bjopm.2015.2024",
+            "pdf_url": null,
+            "authors": [
+              {
+                "name": "Md Mehedi Hasan Emon",
+                "id": "https://openalex.org/A5082282169"
+              },
+              {
+                "name": "Tahsina Khan",
+                "id": "https://openalex.org/A5061664875"
+              },
+              {
+                "name": "Saleh Ahmed Jalal Siam",
+                "id": "https://openalex.org/A5093482247"
+              }
+            ],
+            "citation_count": 190,
+            "reference_count": 90,
+            "is_open_access": true,
+            "oa_status": "diamond",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2024-04-05",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://doi.org/10.14488/bjopm.2015.2024",
+              "url_for_landing_page": "https://doi.org/10.14488/bjopm.2015.2024",
+              "url_for_pdf": null,
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "AI-generated feedback on writing: insights into efficacy and ENL student preference",
+      "authors": [
+        {
+          "name": "Juan Escalante",
+          "id": "https://openalex.org/A5062327687"
+        },
+        {
+          "name": "Austin Pack",
+          "id": "https://openalex.org/A5073501090"
+        },
+        {
+          "name": "Alex Barrett",
+          "id": "https://openalex.org/A5042933080"
+        }
+      ],
+      "abstract": null,
+      "year": 2023,
+      "publication_date": "2023-10-26",
+      "venue": "International Journal of Educational Technology in Higher Education",
+      "publisher": "Springer Nature",
+      "publication_type": "article",
+      "doi": "10.1186/s41239-023-00425-2",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4387954002",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1186/s41239-023-00425-2",
+      "pdf_url": "https://educationaltechnologyjournal.springeropen.com/counter/pdf/10.1186/s41239-023-00425-2",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 547,
+      "reference_count": 38,
+      "fields_of_study": [
+        "Topic Modeling",
+        "Text Readability and Simplification",
+        "Artificial Intelligence in Healthcare and Education"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "AI-generated feedback on writing: insights into efficacy and ENL student preference",
+            "doi": "https://doi.org/10.1186/s41239-023-00425-2",
+            "year": 2023,
+            "publication_date": "2023-10-26",
+            "venue": "International Journal of Educational Technology in Higher Education",
+            "publisher": "Springer Nature",
+            "url": "https://doi.org/10.1186/s41239-023-00425-2",
+            "pdf_url": "https://educationaltechnologyjournal.springeropen.com/counter/pdf/10.1186/s41239-023-00425-2",
+            "authors": [
+              {
+                "name": "Juan Escalante",
+                "id": "https://openalex.org/A5062327687"
+              },
+              {
+                "name": "Austin Pack",
+                "id": "https://openalex.org/A5073501090"
+              },
+              {
+                "name": "Alex Barrett",
+                "id": "https://openalex.org/A5042933080"
+              }
+            ],
+            "citation_count": 547,
+            "reference_count": 38,
+            "is_open_access": true,
+            "oa_status": "diamond",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2023-10-26",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://educationaltechnologyjournal.springeropen.com/counter/pdf/10.1186/s41239-023-00425-2",
+              "url_for_landing_page": "https://doi.org/10.1186/s41239-023-00425-2",
+              "url_for_pdf": "https://educationaltechnologyjournal.springeropen.com/counter/pdf/10.1186/s41239-023-00425-2",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "University efficiency evaluation using data envelopment analysis: future research agenda",
+      "authors": [
+        {
+          "name": "Juliana Pascualote Lemos de Almeida",
+          "id": "https://openalex.org/A5016935095"
+        },
+        {
+          "name": "Fábio Henrique dos Anjos",
+          "id": "https://openalex.org/A5048607233"
+        },
+        {
+          "name": "Marina Figueiredo Moreira",
+          "id": "https://openalex.org/A5024489327"
+        },
+        {
+          "name": "Paulo Henrique de Souza Bermejo",
+          "id": "https://openalex.org/A5060249910"
+        },
+        {
+          "name": "David Nadler Prata",
+          "id": "https://openalex.org/A5068784622"
+        },
+        {
+          "name": "Waldecy Rodrigues",
+          "id": "https://openalex.org/A5091110146"
+        }
+      ],
+      "abstract": null,
+      "year": 2024,
+      "publication_date": "2024-12-30",
+      "venue": "Cogent Education",
+      "publisher": "Taylor & Francis",
+      "publication_type": "article",
+      "doi": "10.1080/2331186x.2024.2445964",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4405890621",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1080/2331186x.2024.2445964",
+      "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/2331186X.2024.2445964?needAccess=true",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 17,
+      "reference_count": 74,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "University efficiency evaluation using data envelopment analysis: future research agenda",
+            "doi": "https://doi.org/10.1080/2331186x.2024.2445964",
+            "year": 2024,
+            "publication_date": "2024-12-30",
+            "venue": "Cogent Education",
+            "publisher": "Taylor & Francis",
+            "url": "https://doi.org/10.1080/2331186x.2024.2445964",
+            "pdf_url": "https://www.tandfonline.com/doi/pdf/10.1080/2331186X.2024.2445964?needAccess=true",
+            "authors": [
+              {
+                "name": "Juliana Pascualote Lemos de Almeida",
+                "id": "https://openalex.org/A5016935095"
+              },
+              {
+                "name": "Fábio Henrique dos Anjos",
+                "id": "https://openalex.org/A5048607233"
+              },
+              {
+                "name": "Marina Figueiredo Moreira",
+                "id": "https://openalex.org/A5024489327"
+              },
+              {
+                "name": "Paulo Henrique de Souza Bermejo",
+                "id": "https://openalex.org/A5060249910"
+              },
+              {
+                "name": "David Nadler Prata",
+                "id": "https://openalex.org/A5068784622"
+              },
+              {
+                "name": "Waldecy Rodrigues",
+                "id": "https://openalex.org/A5091110146"
+              }
+            ],
+            "citation_count": 17,
+            "reference_count": 74,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2024-12-30",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.tandfonline.com/doi/pdf/10.1080/2331186X.2024.2445964?needAccess=true",
+              "url_for_landing_page": "https://doi.org/10.1080/2331186x.2024.2445964",
+              "url_for_pdf": "https://www.tandfonline.com/doi/pdf/10.1080/2331186X.2024.2445964?needAccess=true",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "An Integrated Fuzzy Delphi and Best Worst Method (BWM) for performance measurement in higher education",
+      "authors": [
+        {
+          "name": "Seyed Hamid Hashemi Petrudi",
+          "id": "https://openalex.org/A5026335629"
+        },
+        {
+          "name": "Hamid Ghomi",
+          "id": "https://openalex.org/A5012105183"
+        },
+        {
+          "name": "Mohsen Mazaheri Asad",
+          "id": "https://openalex.org/A5049885031"
+        }
+      ],
+      "abstract": null,
+      "year": 2022,
+      "publication_date": "2022-09-01",
+      "venue": "Decision Analytics Journal",
+      "publisher": "Elsevier BV",
+      "publication_type": "article",
+      "doi": "10.1016/j.dajour.2022.100121",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4294192067",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1016/j.dajour.2022.100121",
+      "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2772662222000522/pdf",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 59,
+      "reference_count": 97,
+      "fields_of_study": [
+        "Multi-Criteria Decision Making",
+        "Delphi Technique in Research",
+        "Value Engineering and Management"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "An Integrated Fuzzy Delphi and Best Worst Method (BWM) for performance measurement in higher education",
+            "doi": "https://doi.org/10.1016/j.dajour.2022.100121",
+            "year": 2022,
+            "publication_date": "2022-09-01",
+            "venue": "Decision Analytics Journal",
+            "publisher": "Elsevier BV",
+            "url": "https://doi.org/10.1016/j.dajour.2022.100121",
+            "pdf_url": "https://www.sciencedirect.com/science/article/pii/S2772662222000522/pdf",
+            "authors": [
+              {
+                "name": "Seyed Hamid Hashemi Petrudi",
+                "id": "https://openalex.org/A5026335629"
+              },
+              {
+                "name": "Hamid Ghomi",
+                "id": "https://openalex.org/A5012105183"
+              },
+              {
+                "name": "Mohsen Mazaheri Asad",
+                "id": "https://openalex.org/A5049885031"
+              }
+            ],
+            "citation_count": 59,
+            "reference_count": 97,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by-nc-nd",
+              "oa_date": "2022-09-01",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.sciencedirect.com/science/article/pii/S2772662222000522/pdf",
+              "url_for_landing_page": "https://doi.org/10.1016/j.dajour.2022.100121",
+              "url_for_pdf": "https://www.sciencedirect.com/science/article/pii/S2772662222000522/pdf",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "Evaluating Supply Chain Operational Efficiency in Game-Based Learning: A Data Envelopment Analysis of Student Performance",
+      "authors": [
+        {
+          "given": "Martin",
+          "family": "Flegl"
+        },
+        {
+          "given": "Jaime A.",
+          "family": "Palma-Mendoza"
+        },
+        {
+          "given": "Ivan A.",
+          "family": "Arana-Solares"
+        },
+        {
+          "given": "Ernesto A.",
+          "family": "Pacheco-Velazquez"
+        }
+      ],
+      "abstract": null,
+      "year": 2026,
+      "publication_date": "2026-3-8",
+      "venue": "2026 IEEE Engineering Education World Conference (EDUNINE)",
+      "publisher": "IEEE",
+      "publication_type": "proceedings-article",
+      "doi": "10.1109/edunine62390.2026.11547035",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": null,
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1109/edunine62390.2026.11547035",
+      "pdf_url": null,
+      "is_open_access": false,
+      "oa_status": "closed",
+      "citation_count": 0,
+      "reference_count": 15,
+      "fields_of_study": [],
+      "keywords": [],
+      "sources": [
+        "crossref",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "crossref",
+          "fields": {
+            "title": "Evaluating Supply Chain Operational Efficiency in Game-Based Learning: A Data Envelopment Analysis of Student Performance",
+            "doi": "10.1109/edunine62390.2026.11547035",
+            "year": 2026,
+            "publication_date": "2026-3-8",
+            "venue": "2026 IEEE Engineering Education World Conference (EDUNINE)",
+            "publisher": "IEEE",
+            "url": "https://doi.org/10.1109/edunine62390.2026.11547035",
+            "authors": [
+              {
+                "given": "Martin",
+                "family": "Flegl"
+              },
+              {
+                "given": "Jaime A.",
+                "family": "Palma-Mendoza"
+              },
+              {
+                "given": "Ivan A.",
+                "family": "Arana-Solares"
+              },
+              {
+                "given": "Ernesto A.",
+                "family": "Pacheco-Velazquez"
+              }
+            ],
+            "citation_count": 0,
+            "reference_count": 15,
+            "publication_type": "proceedings-article"
+          },
+          "retrieved_at": "2026-09-21T09:03:46.800860+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {},
+            "is_oa": false
+          },
+          "retrieved_at": "2026-09-21T09:03:46.800860+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:46.800860+00:00"
+    },
+    {
+      "title": "Development and Evolution of Slacks‐Based Measure Models in Data Envelopment Analysis: A Comprehensive Review of the Literature",
+      "authors": [
+        {
+          "name": "Ali Emrouznejad",
+          "id": "https://openalex.org/A5040540560"
+        },
+        {
+          "name": "Łukasz Brzezicki",
+          "id": "https://openalex.org/A5021409247"
+        },
+        {
+          "name": "Chunguang Lu",
+          "id": "https://openalex.org/A5005952847"
+        }
+      ],
+      "abstract": null,
+      "year": 2025,
+      "publication_date": "2025-02-10",
+      "venue": "Journal of Economic Surveys",
+      "publisher": "Wiley",
+      "publication_type": "article",
+      "doi": "10.1111/joes.12682",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4407372997",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1111/joes.12682",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joes.12682",
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "citation_count": 39,
+      "reference_count": 175,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Spatial and Panel Data Analysis"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Development and Evolution of Slacks‐Based Measure Models in Data Envelopment Analysis: A Comprehensive Review of the Literature",
+            "doi": "https://doi.org/10.1111/joes.12682",
+            "year": 2025,
+            "publication_date": "2025-02-10",
+            "venue": "Journal of Economic Surveys",
+            "publisher": "Wiley",
+            "url": "https://doi.org/10.1111/joes.12682",
+            "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joes.12682",
+            "authors": [
+              {
+                "name": "Ali Emrouznejad",
+                "id": "https://openalex.org/A5040540560"
+              },
+              {
+                "name": "Łukasz Brzezicki",
+                "id": "https://openalex.org/A5021409247"
+              },
+              {
+                "name": "Chunguang Lu",
+                "id": "https://openalex.org/A5005952847"
+              }
+            ],
+            "citation_count": 39,
+            "reference_count": 175,
+            "is_open_access": true,
+            "oa_status": "hybrid",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2025-02-10",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joes.12682",
+              "url_for_landing_page": "https://doi.org/10.1111/joes.12682",
+              "url_for_pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/joes.12682",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "Teaching, research, and third mission efficiency of universities: A data envelopment analysis and hybrid multi‐criteria decision‐making approach",
+      "authors": [
+        {
+          "name": "Muammer Maral",
+          "id": "https://openalex.org/A5019776808"
+        },
+        {
+          "name": "Münevver Çetin",
+          "id": "https://openalex.org/A5009502782"
+        }
+      ],
+      "abstract": null,
+      "year": 2024,
+      "publication_date": "2024-02-08",
+      "venue": "Managerial and Decision Economics",
+      "publisher": "Wiley",
+      "publication_type": "article",
+      "doi": "10.1002/mde.4131",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4391690018",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1002/mde.4131",
+      "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mde.4131",
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "citation_count": 18,
+      "reference_count": 91,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Fiscal Policy and Economic Growth"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Teaching, research, and third mission efficiency of universities: A data envelopment analysis and hybrid multi‐criteria decision‐making approach",
+            "doi": "https://doi.org/10.1002/mde.4131",
+            "year": 2024,
+            "publication_date": "2024-02-08",
+            "venue": "Managerial and Decision Economics",
+            "publisher": "Wiley",
+            "url": "https://doi.org/10.1002/mde.4131",
+            "pdf_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mde.4131",
+            "authors": [
+              {
+                "name": "Muammer Maral",
+                "id": "https://openalex.org/A5019776808"
+              },
+              {
+                "name": "Münevver Çetin",
+                "id": "https://openalex.org/A5009502782"
+              }
+            ],
+            "citation_count": 18,
+            "reference_count": 91,
+            "is_open_access": true,
+            "oa_status": "hybrid",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2024-02-08",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mde.4131",
+              "url_for_landing_page": "https://doi.org/10.1002/mde.4131",
+              "url_for_pdf": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/mde.4131",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "Gamification in Education",
+      "authors": [
+        {
+          "name": "Athanasios Christopoulos",
+          "id": "https://openalex.org/A5089985430"
+        },
+        {
+          "name": "Stylianos Mystakidis",
+          "id": "https://openalex.org/A5049668151"
+        }
+      ],
+      "abstract": null,
+      "year": 2023,
+      "publication_date": "2023-10-02",
+      "venue": "Encyclopedia",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "publication_type": "reference-entry",
+      "doi": "10.3390/encyclopedia3040089",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4387308487",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.3390/encyclopedia3040089",
+      "pdf_url": "https://www.mdpi.com/2673-8392/3/4/89/pdf?version=1696263541",
+      "is_open_access": true,
+      "oa_status": "gold",
+      "citation_count": 201,
+      "reference_count": 115,
+      "fields_of_study": [
+        "Educational Games and Gamification",
+        "Virtual Reality Applications and Impacts",
+        "Augmented Reality Applications"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Gamification in Education",
+            "doi": "https://doi.org/10.3390/encyclopedia3040089",
+            "year": 2023,
+            "publication_date": "2023-10-02",
+            "venue": "Encyclopedia",
+            "publisher": "Multidisciplinary Digital Publishing Institute",
+            "url": "https://doi.org/10.3390/encyclopedia3040089",
+            "pdf_url": "https://www.mdpi.com/2673-8392/3/4/89/pdf?version=1696263541",
+            "authors": [
+              {
+                "name": "Athanasios Christopoulos",
+                "id": "https://openalex.org/A5089985430"
+              },
+              {
+                "name": "Stylianos Mystakidis",
+                "id": "https://openalex.org/A5049668151"
+              }
+            ],
+            "citation_count": 201,
+            "reference_count": 115,
+            "is_open_access": true,
+            "oa_status": "gold",
+            "publication_type": "reference-entry"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by",
+              "oa_date": "2023-10-02",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://www.mdpi.com/2673-8392/3/4/89/pdf?version=1696263541",
+              "url_for_landing_page": "https://doi.org/10.3390/encyclopedia3040089",
+              "url_for_pdf": "https://www.mdpi.com/2673-8392/3/4/89/pdf?version=1696263541",
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    },
+    {
+      "title": "Benchmarking performance through efficiency analysis trees: Improvement strategies for colombian higher education institutions",
+      "authors": [
+        {
+          "name": "José L. Zofío",
+          "id": "https://openalex.org/A5027791905"
+        },
+        {
+          "name": "Juan Aparicio",
+          "id": "https://openalex.org/A5043945029"
+        },
+        {
+          "name": "Javier Barbero",
+          "id": "https://openalex.org/A5005841665"
+        },
+        {
+          "name": "Jon Mikel Zabala‐Iturriagagoitia",
+          "id": "https://openalex.org/A5011364105"
+        }
+      ],
+      "abstract": null,
+      "year": 2024,
+      "publication_date": "2024-02-22",
+      "venue": "Socio-Economic Planning Sciences",
+      "publisher": "Elsevier BV",
+      "publication_type": "article",
+      "doi": "10.1016/j.seps.2024.101845",
+      "pmid": null,
+      "pmcid": null,
+      "arxiv_id": null,
+      "openalex_id": "https://openalex.org/W4392059200",
+      "semantic_scholar_id": null,
+      "dblp_id": null,
+      "url": "https://doi.org/10.1016/j.seps.2024.101845",
+      "pdf_url": "https://doi.org/10.1016/j.seps.2024.101845",
+      "is_open_access": true,
+      "oa_status": "hybrid",
+      "citation_count": 14,
+      "reference_count": 67,
+      "fields_of_study": [
+        "Efficiency Analysis Using DEA",
+        "Fiscal Policy and Economic Growth"
+      ],
+      "keywords": [],
+      "sources": [
+        "openalex",
+        "unpaywall"
+      ],
+      "provenance": [
+        {
+          "provider": "openalex",
+          "fields": {
+            "title": "Benchmarking performance through efficiency analysis trees: Improvement strategies for colombian higher education institutions",
+            "doi": "https://doi.org/10.1016/j.seps.2024.101845",
+            "year": 2024,
+            "publication_date": "2024-02-22",
+            "venue": "Socio-Economic Planning Sciences",
+            "publisher": "Elsevier BV",
+            "url": "https://doi.org/10.1016/j.seps.2024.101845",
+            "pdf_url": null,
+            "authors": [
+              {
+                "name": "José L. Zofío",
+                "id": "https://openalex.org/A5027791905"
+              },
+              {
+                "name": "Juan Aparicio",
+                "id": "https://openalex.org/A5043945029"
+              },
+              {
+                "name": "Javier Barbero",
+                "id": "https://openalex.org/A5005841665"
+              },
+              {
+                "name": "Jon Mikel Zabala‐Iturriagagoitia",
+                "id": "https://openalex.org/A5011364105"
+              }
+            ],
+            "citation_count": 14,
+            "reference_count": 67,
+            "is_open_access": true,
+            "oa_status": "hybrid",
+            "publication_type": "article"
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        },
+        {
+          "provider": "unpaywall",
+          "fields": {
+            "best_oa_location": {
+              "endpoint_id": null,
+              "evidence": "deprecated",
+              "host_type": "publisher",
+              "is_best": true,
+              "license": "cc-by-nc",
+              "oa_date": "2024-02-22",
+              "pmh_id": null,
+              "repository_institution": null,
+              "updated": "deprecated",
+              "url": "https://doi.org/10.1016/j.seps.2024.101845",
+              "url_for_landing_page": "https://doi.org/10.1016/j.seps.2024.101845",
+              "url_for_pdf": null,
+              "version": "publishedVersion"
+            },
+            "is_oa": true
+          },
+          "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+        }
+      ],
+      "version_relation": null,
+      "retrieved_at": "2026-09-21T09:03:44.430204+00:00"
+    }
+  ],
+  "failed_providers": [
+    "arxiv: HTTP Error 406: Not Acceptable",
+    "semantic_scholar: HTTP Error 429: "
+  ],
+  "warnings": [],
+  "retrieved_at": "2026-09-21T09:04:52.605795+00:00"
+}
